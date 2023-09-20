@@ -1,0 +1,1366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>massComm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 16pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 13pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+ color: #000000;
+}
+span.rvts11
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts12
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 4px 0px 6px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps7
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps8
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps9
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps10
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps11
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps12
+{
+ text-align: justify;
+ margin: 0px 0px 0px 6px;
+}
+.rvps13
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps14
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps15
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps16
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps17
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps18
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps19
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps20
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps21
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps22
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps23
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps24
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps25
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps26
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps27
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps28
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps29
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps30
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps31
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps32
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps33
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps34
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps35
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps36
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps37
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps38
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps39
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps40
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps41
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps42
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps43
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps44
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps45
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps46
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps47
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps48
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps49
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps50
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps51
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps52
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps53
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps54
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps55
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps56
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps57
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps58
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps59
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps60
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps61
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps62
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps63
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps64
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps65
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps66
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps67
+{
+ text-align: justify;
+ margin: 0px 4px 0px 0px;
+}
+.rvps68
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps69
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps70
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps71
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps72
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps73
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps74
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps75
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps76
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps77
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps78
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps79
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps80
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps81
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps82
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps83
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps84
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps85
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps86
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps87
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps88
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps89
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps90
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps91
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps92
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps93
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps94
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps95
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps96
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps97
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps98
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps99
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps100
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps101
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps102
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps103
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps104
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps105
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps106
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps107
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps108
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps109
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps110
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps111
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps112
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps113
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps114
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps115
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps116
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps117
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps118
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps119
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps120
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps121
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps122
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps123
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps124
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps125
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps126
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps127
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps128
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps129
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps130
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps131
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps132
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps133
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps134
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps135
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps136
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps137
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps138
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps139
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps140
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps141
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps142
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps143
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps144
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps145
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps146
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps147
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps148
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps149
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps150
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps151
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps152
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps153
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps154
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps155
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps156
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps157
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps158
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps159
+{
+ text-align: justify;
+ line-height: 1.03;
+ margin: 1px 4px 0px 6px;
+}
+.rvps160
+{
+}
+.rvps161
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps162
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps163
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303109260"></a>
+<span   class=rvts0><span   class=rvts6>M</span></span><span   class=rvts0><span
+class=rvts7>ASS               </span></span><span              class=rvts0><span
+class=rvts6>C</span></span><span class=rvts0><span
+class=rvts7>OMMUNICATION</span></span></h2> 
+<p class=rvps3><span class=rvts8><br></span></p>
+<p class=rvps4><span class=rvts8><br></span></p>
+<div      class=rvps160><table      border=0     cellpadding=4     cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=329  valign=top><p  class=rvps5><span  class=rvts8>MACO  2000&nbsp; -
+Basic sews Writing/Reporting .....3.00 Credits</span></p> 
+<p  class=rvps6><span  class=rvts9>A  lecture and laboratory course which places
+emphasis  on writing various types of news stories for print and broadcast&nbsp;
+media.     </span><span     class=rvts10>Prerequisites:    ENGL    1101,    ENGL
+1102.</span></p> 
+<p class=rvps7><span class=rvts9><br></span></p>
+<p  class=rvps8><span  class=rvts8>MACO 2001&nbsp; - Survey of Media and Society
+........3.00  Credits  </span><span  class=rvts9>A  comprehensive examination of
+the   historic   foundations   and  current  status  of  the  mass  media.&nbsp;
+Emphasis&nbsp;   will&nbsp;  be&nbsp;  placed&nbsp;  on&nbsp;  social&nbsp;  and
+economic  controls  as  well as the impact and influence of the mass media&nbsp;
+in society.</span></p> 
+<p     class=rvps9><span    class=rvts10>Prerequisites:    ENGL    1101,    ENGL
+1102.</span></p> 
+<p class=rvps10><span class=rvts10><br></span></p>
+<p    class=rvps11><span    class=rvts8>MACO    2202&nbsp;   -   Advanced   News
+Writing/</span></p> 
+<p class=rvps12><span
+class=rvts8>Reporting…………………………………………..3.00
+</span><span  class=rvts9>Credits  A  lecture and laboratory course which places
+emphasis  on  writing  various types of news stories. The course is designed for
+students  concentrating  in  journalism  or  public  relations. Students will be
+required to publish articles in an approved periodical.&nbsp; </span></p> 
+<p class=rvps12><span class=rvts10>Prerequisite: MACO 2000</span></p>
+<p class=rvps13><span class=rvts9><br></span></p>
+<p    class=rvps14><span    class=rvts8>MACO    2203&nbsp;    -    Writing   for
+Radio/TV/Film...........3.00 Credits</span></p> 
+<p  class=rvps15><span  class=rvts9>A  lecture and laboratory course which&nbsp;
+examines&nbsp;  radio,&nbsp;  television, and their effects on the writer.&nbsp;
+Students  examine&nbsp;  format&nbsp;  requirements for various kinds of scripts
+and  demonstrate  their understanding by writing for commercials, features, talk
+shows, documentaries, and&nbsp; other&nbsp; forms.</span></p> 
+<p class=rvps16><span class=rvts10>Prerequisite: MACO 2000.</span></p>
+<p class=rvps17><span class=rvts9><br></span></p>
+<p   class=rvps18><span   class=rvts8>MACO   3205&nbsp;   -   African   American
+Images/Media  .3.00  Credits  </span><span  class=rvts9>This course explores the
+characterization  and  interpretations of the image of African Americans in film
+and  television  and  attempts  to qualify their valor as a catalyst for social,
+political  and  cultural  change.&nbsp;  The  course  also assesses the dynamics
+of&nbsp;  basic&nbsp; thought propagated&nbsp; through negative imagery in films
+and other media. </span></p> 
+<p class=rvps19><span class=rvts10>Prerequisite: MACO 2203</span></p>
+<p class=rvps20><span class=rvts9><br></span></p>
+<p  class=rvps21><span  class=rvts8>MACO  3206&nbsp;  - History and Criticism of
+Film...3.00  Credits&nbsp;</span><span  class=rvts9>  Historical  and  aesthetic
+contributions  of  famous  films,  film  makers  and  film critics are examined.
+Particular  subjects include the psychological affects of editing techniques and
+Russian   and   French   cinema.&nbsp;   There   is  special  emphasis  on&nbsp;
+African&nbsp;      American&nbsp;      and&nbsp;     Third     World&nbsp;&nbsp;
+films.</span></p> 
+<p  class=rvps22><span  class=rvts10>Prerequisites:  MACO  2203  -  Writing  for
+Radio-Television/Film.&nbsp; 3 semester hours.</span></p> 
+<p class=rvps23><span class=rvts9><br></span></p>
+<p  class=rvps24><span  class=rvts8>MACO  3207&nbsp;  - PR Principles, Practices
+and</span></p> 
+<p                     class=rvps25><span                     class=rvts8>Theory
+....................................................................3.00
+Credits  </span><span  class=rvts9>An  introductory  concept course that surveys
+the  principles,  theories,  strategies,  techniques and practices of the public
+relations profession.&nbsp; </span></p> 
+<p   class=rvps26><span   class=rvts10>Prerequisites:   MACO   2000   and   MACO
+2001</span></p> 
+<p class=rvps27><span class=rvts8><br></span></p>
+<p  class=rvps28><span  class=rvts8>MACO  3208&nbsp;  -  Intro  to Radio/TV/Film
+.................3.00        Credits       </span><span       class=rvts9>Course
+familiarizes&nbsp;  students&nbsp; with&nbsp; organizations,&nbsp; equipment and
+terminology   typically   utilized   in&nbsp;   radio,&nbsp;   television,&nbsp;
+and&nbsp;  film.  Operational procedures, FCC regulations, and styles of writing
+will be introduced.</span></p> 
+<p class=rvps29><span class=rvts10>Prerequisite: MACO 2203.</span></p>
+<p    class=rvps30><span   class=rvts8>MACO   3210&nbsp;   -   Public   Opinions
+and</span></p> 
+<p                   class=rvps31><span                   class=rvts8>Propaganda
+..............................................................3.00
+Credits</span></p> 
+<p  class=rvps32><span  class=rvts9>An  introduction  to  the  nature  of public
+opinion  and  propaganda  from  a  historical  perspective&nbsp;  spanning&nbsp;
+various&nbsp;  cultures&nbsp; and&nbsp; societies. Emphasis on the use and abuse
+of  persuasive communication techniques and the various interrelationships&nbsp;
+determining&nbsp;    the&nbsp;    role&nbsp;    of    mass    media   in   human
+affairs.</span></p> 
+<p    class=rvps33><span    class=rvts10>Prerequisite:   MACO   2202   or   MACO
+2203.</span></p> 
+<p class=rvps34><span class=rvts9><br></span></p>
+<p  class=rvps35><span  class=rvts8>MACO  3218  -  PR  Media Devel and Copy Edit
+....3.00  Credits  </span><span  class=rvts9>Covers  public relations techniques
+for  dissemination  of  messages to multiple groups across internal and external
+organizations  and  the  principles  of  electronic and audiovisual media.&nbsp;
+Focus  on  practical  skills for editing copy and implementing media strategies.
+</span><span class=rvts10>Prerequisite: MACO 3207.</span></p> 
+<p class=rvps36><span class=rvts9><br></span></p>
+<p      class=rvps37><span      class=rvts8>MACO      3228&nbsp;     -     Media
+Advertisements</span></p> 
+<p              class=rvps38><span             class=rvts8>and             Sales
+...................................................................3.00 Credits
+</span><span     class=rvts9>Introductory    survey    of    basic    processes,
+strategies,&nbsp;  and&nbsp;  techniques  for  producing, selling and evaluating
+advertising.   Emphasis   on   consumer&nbsp;   and  marketing  research,  media
+advertising  campaigns,  marketing&nbsp;  plans,&nbsp;  media  ratings, audience
+analysis and media buying plans.</span></p> 
+<p  class=rvps39><span  class=rvts10>Prerequisite:&nbsp;  MACO 2202 or MACO 2001
+or MACO 2203.</span></p> 
+<p class=rvps40><span class=rvts9><br></span></p>
+<p    class=rvps41><span    class=rvts8>MACO    3301&nbsp;    -   News   Editing
+I................................3.00 Credits</span></p> 
+<p  class=rvps42><span  class=rvts9>A  practical course that uses simulated news
+copy  and wire service stories to give students training in the theory and&nbsp;
+practice&nbsp;  of&nbsp;  copy editing, headline&nbsp; writing,&nbsp; page&nbsp;
+design&nbsp;     and&nbsp;     picture&nbsp;&nbsp;     sizing&nbsp;&nbsp;    and
+cropping.</span></p> 
+<p    class=rvps43><span    class=rvts10>Prerequisite:    Credit:   3   semester
+hours.&nbsp; Prerequisite: MACO 2000.</span></p> 
+<p class=rvps44><span class=rvts9><br></span></p>
+<p   class=rvps45><span   class=rvts8>MACO   3302&nbsp;   -   News   Editing  II
+..............................3.00 Credits</span></p> 
+<p   class=rvps46><span  class=rvts9>An  advanced  practical  course  that&nbsp;
+uses&nbsp;  simulated&nbsp;  news&nbsp;  copy&nbsp;  and wire service stories to
+give  students  training  in  the  theory  and  practice  of copy editing,&nbsp;
+headline&nbsp;  writing,&nbsp;  page&nbsp;  design&nbsp;  and picture sizing and
+cropping.</span></p> 
+<p  class=rvps47><span class=rvts10>Prerequisite:&nbsp; News&nbsp; Editing&nbsp;
+I.&nbsp;&nbsp;   Credit:&nbsp;   3   semester  hours.&nbsp;  Prerequisite:  MACO
+3301.</span></p> 
+<p class=rvps48><span class=rvts9><br></span></p>
+<p    class=rvps49><span    class=rvts8>MACO    3303&nbsp;   -   Photojournalism
+............................3.00  Credits  </span><span  class=rvts9>This course
+emphasizes  the  communicative  effects of pictures and the proper selection and
+display  of  photographs.  Students  must  sup-  ply&nbsp;&nbsp;  their own 35mm
+cameras.&nbsp;&nbsp;  Prerequisites:  Basic  News  Writing/Reporting;  Survey of
+Media   and   Society.&nbsp;&nbsp;   Credit:   3   semester   hours.&nbsp;&nbsp;
+</span></p> 
+<p  class=rvps50><span class=rvts10>Prerequisite:&nbsp; MACO&nbsp; 2000 and MACO
+2001.</span></p> 
+<p class=rvps51><span class=rvts9><br></span></p>
+<p  class=rvps52><span  class=rvts8>MACO  3206&nbsp;  - History and Criticism of
+Film   ......3.00  Credits  </span><span  class=rvts9>Historical  and  aesthetic
+contributions   of   famous  films,  film&nbsp;  makers  and  film  critics  are
+examined.&nbsp; Particular subjects include the spy</span></p> 
+<p class=rvps53><span class=rvts9><br></span></p>
+<p      class=rvps54><span      class=rvts8>MACO      3310&nbsp;      -     Mass
+Communication</span></p> 
+<p           class=rvps55><span           class=rvts8>Research           Methods
+...................................................3.00 Credits</span></p> 
+<p  class=rvps56><span  class=rvts9>An  introduction  to&nbsp; qualitative&nbsp;
+and&nbsp;  qualitative&nbsp; research&nbsp; methods and procedures used to study
+issues  and  problems  in mass communication.&nbsp; This course covers sampling,
+research&nbsp;  design,&nbsp;  observation  and  measurement,  statistics,  data
+analysis,       documentation/reporting       formats,       and       execution
+strategies/tools.</span></p> 
+<p   class=rvps57><span   class=rvts10>Prerequisites:   MACO   2000,  MACO&nbsp;
+2001&nbsp; and&nbsp; MACO&nbsp; 2000; Per- mission of instructor.</span></p> 
+<p class=rvps58><span class=rvts9><br></span></p>
+<p    class=rvps59><span    class=rvts8>MACO    3320&nbsp;    -    History    of
+Journalism....................3.00     Credits     </span><span    class=rvts9>A
+concentrated  lecture-discussion  course  in  a  historical  context.&nbsp;  The
+growth  of American journalism is traced, including the contributions of African
+Americans,  Hispanics,  Native&nbsp; Americans,&nbsp; and&nbsp; Asians. Students
+identify   major   personalities   and   examine   socioeconomic   factors&nbsp;
+affecting&nbsp;     journalism     in     the     United     States.&nbsp;&nbsp;
+Prerequisites:&nbsp;  Sur-  vey</span><span  class=rvts9>  &nbsp;  &nbsp; &nbsp;
+&nbsp;</span><span  class=rvts9>of</span><span class=rvts9> &nbsp; &nbsp; &nbsp;
+&nbsp;</span><span      class=rvts9>Media     and&nbsp;     Society;</span><span
+class=rvts9>        &nbsp;        &nbsp;        &nbsp;        &nbsp;</span><span
+class=rvts9>Advanced</span><span     class=rvts9>     &nbsp;    &nbsp;    &nbsp;
+&nbsp;</span><span   class=rvts9>News  Writing/Reporting  or  Writing  For&nbsp;
+Radio-Television-Film.&nbsp; Credit: 3 semester hours.</span></p> 
+<p  class=rvps60><span  class=rvts10>Prerequisite:&nbsp; MACO 2201, MACO 2202 or
+MACO 2203</span></p> 
+<p class=rvps61><span class=rvts9><br></span></p>
+<p  class=rvps62><span  class=rvts8>MACO 3327&nbsp; - History/Dev of Radio &amp;
+TV  ..........3.00  Credits  </span><span  class=rvts9>Follows  the  growth  and
+development  of radio and television from the earliest technology to the present
+day.  Focus  on  the  social  impact of&nbsp; the&nbsp; interplay&nbsp; of&nbsp;
+programming,&nbsp;     social     trends,     and    technology.    </span><span
+class=rvts10>Prerequisite: MACO 2203.</span></p> 
+<p class=rvps63><span class=rvts9><br></span></p>
+<p  class=rvps64><span  class=rvts8>MACO  3330&nbsp;  -  Editorial  and Critical
+Writing ......3.00 Credits</span></p> 
+<p  class=rvps65><span class=rvts9>A lecture-discussion and writing course which
+concentrates   on   the  writing  of  editorials,  book  and  film  review,  and
+columns.&nbsp;   The  critical  and  analytical  approaches  of  selected  major
+national and international newspapers are examined.</span></p> 
+<p  class=rvps66><span  class=rvts10>Prerequisites: Survey of Media and Society;
+Advanced  News  Writing/Reporting  or  Writing  for  Radio-Television-Film, MACO
+2001.</span></p> 
+<p class=rvps67><span class=rvts8><br></span></p>
+<p  class=rvps68><span  class=rvts8>MACO  3331&nbsp;  - International Journalism
+..............3.00  Credits  </span><span  class=rvts9>This  course  studies the
+foreign  media  and  provides instruction in the techniques and skills needed to
+write for foreign or international organizations.</span></p> 
+<p  class=rvps69><span  class=rvts10>Prerequisite:  MACO 2001, MACO 2202 or MACO
+2203.</span></p> 
+<p class=rvps70><span class=rvts9><br></span></p>
+<p     class=rvps71><span     class=rvts8>MACO     3334&nbsp;     -    Broadcast
+Journal/Editing............3.00 Credits</span></p> 
+<p  class=rvps72><span class=rvts9>This lecture-laboratory course is oriented to
+radio  and  television broadcasting. Emphasis is placed on gathering, analyzing,
+writing,  editing  and  presenting  news.  Studio  and  on-location  tapings are
+required. </span></p> 
+<p     class=rvps73><span     class=rvts10>Prerequisite:     Introduction     to
+Radio-Television-Film. </span></p> 
+<p class=rvps74><span class=rvts10><br></span></p>
+<p  class=rvps75><span  class=rvts8>MACO  3340&nbsp;  - Interpretative Reporting
+...............3.00 Credits</span></p> 
+<p  class=rvps76><span  class=rvts9>An  advanced writing course which focuses on
+developing  the  student's  analytical  and  news writing skills for coverage of
+such  governmental  bodies  as  the  schools, courts and city, county, and state
+agencies.   Students   will   be   assigned  to&nbsp;  cover&nbsp;  actual&nbsp;
+news&nbsp;  events and&nbsp; be&nbsp; given instruction&nbsp; in&nbsp; how&nbsp;
+to&nbsp;   analyze&nbsp;   the&nbsp;  causes&nbsp;  of&nbsp;  news  events&nbsp;
+through  interviewing  and  the  persistent searching of records. Students&nbsp;
+will&nbsp;    be    required    to    publish    articles    in    an   approved
+periodical</span></p> 
+<p    class=rvps77><span   class=rvts10>Prerequisite:   MACO   2001   and   MACO
+3301</span></p> 
+</td>
+<td  width=340  valign=top><p class=rvps78><span class=rvts8>MACO 3348 - Fund of
+TV Production ..................3.00 Credits </span></p> 
+<p  class=rvps79><span  class=rvts9>Designed  to introduce students to the basic
+principles  of effective television production. Student will learn the operation
+of  selected  production  equipment  and  how  to  make  creative  and aesthetic
+decisions regarding programming. </span></p> 
+<p     class=rvps80><span     class=rvts10>Prerequisite:     Introduction     to
+Radio-Television-Film. </span></p> 
+<p class=rvps81><span class=rvts10><br></span></p>
+<p   class=rvps82><span   class=rvts8>MACO  3349  -  Fund  of  Radio  Production
+.............3.00 Credits </span></p> 
+<p  class=rvps83><span  class=rvts9>Designed  to introduce students to the basic
+principles  of  effective  radio  production.&nbsp;  The  student will learn the
+operation  of  selected  radio production equipment and how to make creative and
+aesthetic decisions regarding programming.&nbsp; </span></p> 
+<p     class=rvps84><span     class=rvts10>Prerequisite:     Introduction     of
+Radio-Television-Film.</span></p> 
+<p class=rvps85><span class=rvts8><br></span></p>
+<p     class=rvps86><span    class=rvts8>MACO    3351    -    Feature    Writing
+..............................3.00 Credits</span></p> 
+<p  class=rvps87><span class=rvts9>A lecture and laboratory course which focuses
+on   developing   the   skills  in  researching,  organizing,  and  writing  all
+types&nbsp;  of&nbsp;  feature&nbsp; stories for newspapers and magazines.&nbsp;
+Students    are    required    to    publish    articles    in    an    approved
+periodical.</span></p> 
+<p  class=rvps88><span  class=rvts10>Prerequisite:&nbsp;  MACO&nbsp;  2001&nbsp;
+and&nbsp; MACO 3301.</span></p> 
+<p class=rvps89><span class=rvts9><br></span></p>
+<p   class=rvps90><span   class=rvts8>MACO  3360&nbsp;  -  Newspaper  Production
+..................3.00  Credits  </span><span  class=rvts9>This  course offers a
+thorough  understanding  of  principles  and  skills  involved  in  producing  a
+newspaper  or  magazine.  It  combines  theory with production activities.&nbsp;
+Students  will  be  taught&nbsp;  the  organization of&nbsp; a newspaper and its
+functions   as   well   as  headline  writing,  copy  editing,  and  layout  and
+design.</span></p> 
+<p   class=rvps91><span   class=rvts10>Prerequisites:   MACO   2001   and   MACO
+3301</span></p> 
+<p class=rvps92><span class=rvts9><br></span></p>
+<p  class=rvps93><span  class=rvts8>MACO 4218&nbsp; - PR Research and Evaluation
+........3.00 Credits</span></p> 
+<p  class=rvps94><span  class=rvts9>This  course  is  designed  to help students
+develop   the  essential  research  and  analytical  skills  for  the  planning,
+execution,  and  evaluation  of programs that address communication problems and
+issues faced by organizations and institutions. </span></p> 
+<p  class=rvps95><span  class=rvts10>Prerequisites: PR Principles, Practices and
+Theory; Mass Communication Research Methods.</span></p> 
+<p class=rvps96><span class=rvts8><br></span></p>
+<p  class=rvps97><span  class=rvts8>MACO  4222&nbsp;  -  Philosophy  and  Ethics
+of</span></p> 
+<p                      class=rvps98><span                      class=rvts8>Mass
+Communication..............................................3.00 Credits
+</span><span  class=rvts9>This  course is based on the philosophical assumptions
+embodied  in  mass communications systems around the world. A lecture-discussion
+method&nbsp; is used.</span></p> 
+<p    class=rvps99><span   class=rvts10>Prerequisite:   MACO   2202   and   MACO
+2001</span></p> 
+<p class=rvps100><span class=rvts9><br></span></p>
+<p  class=rvps101><span  class=rvts8>MACO  4262&nbsp;  -  Media  Arts and Design
+..................3.00 Credits</span></p> 
+<p  class=rvps102><span  class=rvts9>This  course offers students an opportunity
+to  develop  basic  desk-top  publishing skills in page design, layout and other
+graphic  elements  necessary  for  public  relations  and advertising campaigns.
+</span></p> 
+<p  class=rvps103><span class=rvts10>Prerequisite: PR Media Development and Copy
+Editing.</span></p> 
+<p class=rvps104><span class=rvts10><br></span></p>
+<p   class=rvps105><span   class=rvts8>MACO  4264&nbsp;  -  Media  Arts  Studies
+........................3.00  Credits  </span><span  class=rvts9>Special  course
+which  allows students to focus on and study current media themes, applications,
+trend, etc.&nbsp; Course content varies. </span></p> 
+<p   class=rvps106><span  class=rvts10>Prerequisite:  permission  of  Department
+Chair.</span></p> 
+<p class=rvps107><span class=rvts10><br></span></p>
+<p  class=rvps108><span class=rvts8>MACO 4385&nbsp; - Public Relations Campaigns
+.........3.00 Credits</span></p> 
+<p    class=rvps109><span   class=rvts9>In   this   seminar   students   analyze
+contemporary  issues and problems faced by public relations professionals.&nbsp;
+Students   develop   special   public   relations  campaigns  for  social  cause
+organizations  and  acquire  entry-level professional skills in public relations
+through practical experience. </span></p> 
+<p  class=rvps110><span  class=rvts10>Prerequisites;  PR  Media  Development and
+Copy Editing; PR Research and Evaluation.</span></p> 
+<p class=rvps111><span class=rvts8><br></span></p>
+<p   class=rvps112><span   class=rvts8>MACO   4412&nbsp;   -  Communication  Law
+.....................3.00  Credits  </span><span  class=rvts9>Study  of  various
+laws  affecting  American&nbsp;  media.&nbsp;&nbsp; Students&nbsp; examine&nbsp;
+the  concepts  of  freedom  of  speech  and press, specific&nbsp; laws&nbsp; and
+alternative  interpretations  of  those laws, federal regulatory agencies rights
+in  news  and advertising, libel&nbsp; slander,&nbsp; copyrights&nbsp; and&nbsp;
+invasion&nbsp; of&nbsp; privacy.</span></p> 
+<p  class=rvps113><span  class=rvts10>Prerequisites:  MACO 2001, MACO 2202, MACO
+2203.</span></p> 
+<p class=rvps114><span class=rvts9><br></span></p>
+<p   class=rvps115><span  class=rvts8>MACO  4475&nbsp;  -  Radio  Program  &amp;
+Production I....3.00 Credits</span></p> 
+<p  class=rvps116><span class=rvts9>Organization and operation of commercial and
+noncommercial  radio  stations  inclusive  of  staffing,  formats, promotion and
+programming.  The student receives training as a producer, performer and writer.
+</span></p> 
+<p  class=rvps117><span class=rvts10>Prerequisites: Survey of Media and Society;
+Broadcast Journalism and Editing.</span></p> 
+<p class=rvps118><span class=rvts10><br></span></p>
+<p  class=rvps119><span  class=rvts8>MACO  4476&nbsp;  -  Radio  Programming and
+</span></p> 
+<p            class=rvps120><span            class=rvts8>Production           II
+…………………………………….....3.00 Credits</span></p> 
+<p   class=rvps121><span   class=rvts9>Juniors  and  seniors  are  allowed&nbsp;
+to&nbsp;  work&nbsp;  full-time&nbsp;  off-&nbsp;  campus (with university&nbsp;
+supervision)&nbsp;   in&nbsp;&nbsp;  journalism,&nbsp;&nbsp;  public&nbsp;&nbsp;
+relations, radio, television, or film for credit.</span></p> 
+<p    class=rvps122><span    class=rvts10>Prerequisite:    Permission   of&nbsp;
+Instructor. Credit: 3 semester hours </span></p> 
+<p class=rvps123><span class=rvts10><br></span></p>
+<p  class=rvps124><span class=rvts8>MACO 4477&nbsp; - Adv TV Prod &amp; Direct I
+................3.00 Credits </span></p> 
+<p  class=rvps125><span  class=rvts9>Hands-on experience in producing, directing
+and/editing  will  be emphasized. Student will be required to utilize production
+kills   by   working  skills  various  class  projects  and  cable  productions.
+</span><span   class=rvts10>Prerequisites:   Survey   of   Media  and,  Society;
+Fundamentals of Television Production.</span><span class=rvts9> </span></p> 
+<p class=rvps126><span class=rvts9><br></span></p>
+<p  class=rvps127><span  class=rvts8>MACO  4478&nbsp; - Adv TV Prod &amp; Direct
+II ..............3.00 Credits</span></p> 
+<p class=rvps128><span class=rvts9>A continuation of MACO 4477</span></p>
+<p class=rvps129><span class=rvts9><br></span></p>
+<p    class=rvps130><span    class=rvts8>MACO    4479&nbsp;   -   Cinematography
+I..........................3.00 Credits </span></p> 
+<p  class=rvps131><span  class=rvts9>Beginning film making courses with emphasis
+on  the  use  of  basic  motion  picture  cameras, editing techniques and script
+preparation.  Special  emphasis  is  placed  on  16mm  film  production with the
+completion of a short film as a course requirement. </span></p> 
+<p  class=rvps132><span  class=rvts10>Prerequisites:  History  and  Criticism of
+Film;   Survey   of   Media   and   Society.   Credit:  3  semester  hours  each
+semester.</span></p> 
+<p class=rvps133><span class=rvts8><br></span></p>
+<p   class=rvps134><span   class=rvts8>MACO   4480&nbsp;   -  Cinematography  II
+........................3.00 Credits</span></p> 
+<p  class=rvps135><span  class=rvts9>A continuation of MACO 4479, Cinematography
+II is based on knowledge gained in the first course. </span></p> 
+<p class=rvps136><span class=rvts10>Prerequisite: Cinematography 1.</span></p>
+<p class=rvps137><span class=rvts8><br></span></p>
+<p      class=rvps138><span      class=rvts8>MACO     4490&nbsp;     -     Media
+Seminar...............................3.00          Credits         </span><span
+class=rvts9>Must  be  enrolled  in  one  of  the following Class(s) Senior. This
+course    for    graduating    seniors    provides    students&nbsp;    an&nbsp;
+opportunity&nbsp;  to  apply theories and techniques to practical experiences in
+their  areas&nbsp;  of  concentration.  It  is a research seminar.&nbsp; Seniors
+must  successfully  complete  an  approved  final project that will be presented
+both  orally and in writing to be judged by a jury of faculty in the department.
+In  consultation  with  their  advisers,  students  may select a topic&nbsp; for
+their   research   during   the   first   semester.   Research  projects  should
+reflect&nbsp;    the   career&nbsp;   or&nbsp;   academic   interests   of   the
+students.</span></p> 
+<p  class=rvps139><span  class=rvts10>Prerequisite: Graduating senior. Credit: 3
+semester hours.</span></p> 
+<p class=rvps140><span class=rvts9><br></span></p>
+<p    class=rvps141><span    class=rvts8>MACO    4494E    -    Directed    Study
+..............................3.00 Credits</span></p> 
+<p  class=rvps142><span  class=rvts9>A  project  designed  by  the student and a
+radio-television-film  faculty  member  who  agrees  to work with the student to
+meet  specific  and  individual needs.&nbsp; Directed study requires the student
+to   complete   extensive   readings   and   writing  assignments.  </span><span
+class=rvts10>Prerequisites:  Junior  or senior status in major and permission of
+Instructor.</span></p> 
+<p class=rvps143><span class=rvts8><br></span></p>
+<p    class=rvps144><span    class=rvts8>MACO    4494J    -    Directed    Study
+..............................3.00   Credits  </span><span  class=rvts9>Must  be
+enrolled  in  one  of the following Class(s): Junior, Senior. A project designed
+by  the  student and a&nbsp; journalism&nbsp; faculty&nbsp; member who agrees to
+work  with  the  student  to  meet specific and individual needs. Directed study
+requires  extensive  reading  and  written  work  from&nbsp;  the student.&nbsp;
+Prerequisites:   junior   or   senior   status   in   major  and  permission  of
+instructor.</span></p> 
+<p class=rvps145><span class=rvts9><br></span></p>
+<p    class=rvps146><span    class=rvts8>MACO    4494P    -    Directed    Study
+..............................3.00 Credits</span></p> 
+<p  class=rvps147><span  class=rvts9>A  project  designed  by  the student and a
+public  relations  faculty  member  who  agrees to work with the student to meet
+specific  and  individual needs. Directed study requires the student to complete
+extensive readings and writing assignments. </span></p> 
+<p  class=rvps148><span  class=rvts10>Prerequisites:  Senior status in major and
+permission of the Instructor.</span></p> 
+<p class=rvps149><span class=rvts11><br></span></p>
+<p      class=rvps150><span      class=rvts8>MACO     4498E     -     Internship
+.....................................3.00 Credits</span></p> 
+<p  class=rvps151><span  class=rvts9>Part-time  placement  in professional media
+facilities  in Albany and other cities. Emphasis is on learning overall business
+structure  and  developing  skills  for  entry-level  decision-making positions.
+</span></p> 
+<p  class=rvps152><span  class=rvts10>Prerequisites:  Senior status in major and
+permission of Instructor.</span></p> 
+<p class=rvps153><span class=rvts8><br></span></p>
+<p      class=rvps154><span      class=rvts8>MACO     4498J     -     Internship
+......................................3.00          Credits         </span><span
+class=rvts9>Part-time    placement   in   professional   media   facilities   in
+Albany&nbsp;  and  other  cities.&nbsp;&nbsp;  Emphasis&nbsp;  in&nbsp; on&nbsp;
+learning&nbsp;      overall&nbsp;     business&nbsp;&nbsp;     structure     and
+developing&nbsp;&nbsp;             skills&nbsp;&nbsp;            for&nbsp;&nbsp;
+entry-level&nbsp;&nbsp;       decision&nbsp;&nbsp;      making&nbsp;&nbsp;&nbsp;
+positions.</span></p> 
+<p  class=rvps155><span  class=rvts10>Prerequisites:  Senior status in major and
+permission of instructor.</span></p> 
+<p class=rvps156><span class=rvts9><br></span></p>
+<p      class=rvps157><span      class=rvts8>MACO     4498P     -     Internship
+......................................3.00 Credits</span></p> 
+<p  class=rvps158><span  class=rvts9>Part-time  placement  in professional media
+facilities  in Albany and other cities. Emphasis is on learning overall business
+structure  and  developing  skills  for  entry-level  decision-making positions.
+</span></p> 
+<p  class=rvps159><span  class=rvts10>Prerequisites:  Senior status in major and
+permission of Instructor.</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps161><span class=rvts8><br></span></p>
+<p class=rvps162><span class=rvts8><br></span></p>
+<p class=rvps163><span class=rvts12><br></span></p>
+</body></html>

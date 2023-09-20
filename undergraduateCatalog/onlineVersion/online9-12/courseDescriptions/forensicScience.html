@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>forensicScience</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 16pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 13pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+ color: #000000;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 4px 0px 6px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps7
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps8
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps9
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps10
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps11
+{
+ text-align: justify;
+ margin: 0px 5px 0px 6px;
+}
+.rvps12
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps13
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps14
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps15
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps16
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps17
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps18
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps19
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps20
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps21
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps22
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps23
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps24
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps25
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps26
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps27
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps28
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps29
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps30
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps31
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps32
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps33
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps34
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps35
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps36
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps37
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps38
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps39
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps40
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps41
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps42
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps43
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps44
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps45
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps46
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps47
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps48
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps49
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps50
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps51
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps52
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps53
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps54
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps55
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps56
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps57
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps58
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps59
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps60
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps61
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps62
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps63
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps64
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps65
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps66
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps67
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps68
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps69
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps70
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps71
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps72
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps73
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps74
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps75
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps76
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps77
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps78
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps79
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps80
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps81
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps82
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps83
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps84
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps85
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps86
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps87
+{
+}
+.rvps88
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps89
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps90
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps91
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303109247"></a>
+<span   class=rvts0><span   class=rvts6>F</span></span><span   class=rvts0><span
+class=rvts7>ORENSIC             </span></span><span            class=rvts0><span
+class=rvts6>S</span></span><span class=rvts0><span
+class=rvts7>CIENCE</span></span></h2> 
+<p class=rvps3><span class=rvts8><br></span></p>
+<p class=rvps4><span class=rvts8><br></span></p>
+<div   class=rvps87><table   width=691   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=341  valign=top><p  class=rvps5><span  class=rvts8>FOSC  2100&nbsp; -
+Intro to Forensic Scientific</span></p> 
+<p           class=rvps6><span          class=rvts8>Crime          Investigation
+................................................ 3.00 Credits</span></p> 
+<p  class=rvps7><span  class=rvts9>An introductory look at the various fields of
+study  and  how  they  are  used  in  modern law enforcement. A brief history of
+forensic  science  in  Europe  and  the  United  States.&nbsp;  Use  of Geology,
+Anthropology,       Dentistry,       Pathology,      and      Psychiatry      in
+Investigation.</span></p> 
+<p class=rvps8><span class=rvts9><br></span></p>
+<p  class=rvps9><span  class=rvts8>FOSC  2110-Survey  of  Forensic  Science  for
+</span></p> 
+<p class=rvps10><span
+class=rvts8>Non-Majors………………………………………….3.00
+Credits</span></p> 
+<p  class=rvps11><span  class=rvts9>This  course was designed as a survey course
+in  forensic  science for non-forensic science majors. The course is an overview
+of  investigative techniques and methods used in the crime laboratory to analyze
+physical  evidence. This course will also provide, to those who wish to follow a
+career  in  law  enforcement  and  law,  insight  into the workings of the crime
+laboratory.    The    course    will    consist    of    lectures    and    some
+demonstrations.</span></p> 
+<p class=rvps12><span class=rvts10>Pre-requisites: FOSC 2100</span></p>
+<p class=rvps13><span class=rvts10><br></span></p>
+<p           class=rvps14><span          class=rvts8>FOSC          2120-Forensic
+Photography------------------ 3.00 Credits</span></p> 
+<p  class=rvps15><span class=rvts9>Designed as an introductory couse in forensic
+photography.&nbsp;   The   history   of  photography  will  be  presented.&nbsp;
+Technical  aspects  of  exposure,  image  characteristics,  and  crime scene and
+evidence  documentation  will  be  introduced and projects will be used to apply
+these  techniques.&nbsp;&nbsp;  A  final crime scene project with a presentation
+using   photographs   generated  in  the  project  will  be  used  to  show  how
+photographic  documentation  can  be  used  as  an  investigative  and  analysis
+technique in the reconstruction of a crime scene. </span></p> 
+<p class=rvps16><span class=rvts10>Pre-requisites: FOSC 2100</span></p>
+<p class=rvps17><span class=rvts10><br></span></p>
+<p    class=rvps18><span   class=rvts8>FOSC   2130-Crime   Scene   Investigation
+1---------- 3.00 Credits</span></p> 
+<p   class=rvps19><span  class=rvts9>This  course  is  intended  to  familiarize
+students   with   the   basic  principles  of  Crime  scene  investigations  and
+reconstruction  through  Crime  Scene  Unit,  Crime  Scene Protocol, Crime Scene
+Evidence Collection and Crime scene interpretations.&nbsp;&nbsp; </span></p> 
+<p class=rvps20><span class=rvts9>Pre-requisites:&nbsp; FOSC 2100</span></p>
+<p class=rvps21><span class=rvts9><br></span></p>
+<p    class=rvps22><span    class=rvts8>FOSC-2140-Crime    Scene   Investigation
+11----------3.00 Credits</span></p> 
+<p    class=rvps23><span   class=rvts9>This   course   will   present   students
+opportunities  to  learn  more  principles  in  crime  scene investigation&nbsp;
+including   crime   scene   processing,   crime  scene  Evidence  Classification
+collection  methods  and  crime  scene reports.&nbsp; The course will go in debt
+and  much  more  beyond  what  is  presented  in  Crime  Scene Investigation and
+Reconstruction 1.</span></p> 
+<p class=rvps24><span class=rvts10>Pre-requisites-FOSC 2130.</span></p>
+<p class=rvps25><span class=rvts10><br></span></p>
+<p  class=rvps26><span  class=rvts8>FOSC  3020&nbsp;  -  Forensic  Microscopy of
+</span></p> 
+<p class=rvps27><span
+class=rvts8>Trace…………………………..…………………. 3.00
+Credits</span></p> 
+<p  class=rvps28><span class=rvts9>Light microscopy of trace evidence including,
+contrast,&nbsp;  resolving  power  and  illumination;  interference,  phase  and
+fluorescence&nbsp;  microscopy;  microscopy  with polarized light, birefringence
+and  crystal  structure; dispersion staining; photomicrography; fibers, minerals
+and&nbsp; residues.</span></p> 
+<p  class=rvps29><span  class=rvts10>Prerequisites: FOSC 3010L, PHYS 2221K, PHYS
+2222K,   PHYS</span><span  class=rvts9>  </span><span  class=rvts10>1111K,  PHYS
+1112K</span></p> 
+<p class=rvps30><span class=rvts9><br></span></p>
+<p  class=rvps31><span  class=rvts8>FOSC  3030&nbsp;  -  Criminal Evidence/Court
+Proc.......3.00   Credits  </span><span  class=rvts9>Consideration  of  laws  of
+criminal   evidence,   rules   of   search   and   seizures,   chain-of-custody,
+admissibility,  opinion  and&nbsp;  hearsay,  etc.,  and  the mechanics of&nbsp;
+trials.</span></p> 
+<p  class=rvps32><span  class=rvts10>Prerequisite:&nbsp;  CRJU&nbsp;  1100, FOSC
+2000 and FOSC 2100.</span></p> 
+<p class=rvps33><span class=rvts10><br></span></p>
+<p  class=rvps34><span  class=rvts8>FOSC 3100&nbsp; - International Forensic DNA
+Typing  3.00  Credits  </span><span class=rvts9>This course consists of lectures
+that  review in some detail the&nbsp; his- tory, scientific principles, forensic
+applications   and   practice   of   DNA   typing  and  databases  in  different
+countries.&nbsp;  This  course  will  teach students about&nbsp; different&nbsp;
+DNA&nbsp;  typing&nbsp;  technologies&nbsp;  and databases and&nbsp;&nbsp; their
+international  usage and variations.&nbsp; DNA typing provides information&nbsp;
+on  genetic  variations in all forms of life at the molecular level which can be
+used  in  forensics,  clinical  diagnostics  and evolutionary biology among many
+fields.  The course will also examine the roles&nbsp; and&nbsp; activities&nbsp;
+of   international,  regional  and  national  organizations  in&nbsp;  the&nbsp;
+promotion&nbsp;    and    exchange    of    DNA    database   technologies   and
+information.</span></p> 
+<p class=rvps35><span class=rvts9><br></span></p>
+<p   class=rvps36><span   class=rvts8>FOSC   3200&nbsp;   -  Bioterrorism  &amp;
+Biotechnology  .......3.00  Credits  </span><span  class=rvts9>This  course  was
+designed  to help internalize the ASU Forensic Science program curriculum.&nbsp;
+The  course  is  concerned  with  the  scientific&nbsp;&nbsp;  issues&nbsp;  and
+nature&nbsp;   of&nbsp;   current&nbsp;   and&nbsp;  future&nbsp;  threats&nbsp;
+posed&nbsp;    by   Bioterrorism&nbsp;   and&nbsp;   the   connections   between
+Biotechnology  and Bio defense.&nbsp; The&nbsp; scientific&nbsp; theme and scope
+are  international  and  involve  showing how different countries, multinational
+companies   and   transnational  organizations  are  active  in  the  fields  of
+Biotechnology   and   impacted   by   issues   relating   to  Biotechnology  and
+Bioterrorism.</span></p> 
+<p class=rvps37><span class=rvts9><br></span></p>
+<p   class=rvps38><span   class=rvts8>FOSC   3420&nbsp;  -  Research  Statistics
+...........................3.00   Credits  </span><span  class=rvts9>This  is  a
+survey&nbsp;     of&nbsp;    descriptive&nbsp;    and&nbsp;    inferential&nbsp;
+statistics&nbsp;       used      in      Criminal&nbsp;      Justice&nbsp;&nbsp;
+research.&nbsp;&nbsp;&nbsp;  Applications&nbsp;  of&nbsp;  parametric  and  non-
+parametric  methods  of  hypothesis  testing  constitute  the  emphasis  of  the
+course.&nbsp;  Measures  of  central  tendency  and  dispersion  are  related to
+inferences    to&nbsp;    population   parameters.&nbsp;&nbsp;   Pearson's&nbsp;
+Product&nbsp;  Moment  correlation,  regression,  analysis of variance and other
+tests&nbsp; of sample means are reviewed.</span></p> 
+<p  class=rvps39><span class=rvts10>Prerequisites: CRJU 1100, CRJU 2400 and CRJU
+3410.</span></p> 
+<p class=rvps40><span class=rvts9><br></span></p>
+<p   class=rvps41><span  class=rvts8>FOSC  4040&nbsp;  -  Forensic  Serology/DNA
+</span></p> 
+<p class=rvps42><span
+class=rvts8>Tech……………………………………….I      OR     3.00
+Credits</span></p> 
+<p    class=rvps43><span    class=rvts9>Practices    of    search,   collection,
+preservation&nbsp;  and&nbsp;  identification of blood and body fluids as wet or
+dry  stains;  immunologic  typing  of  blood;  DNA-typing  and  electrophoresis,
+and&nbsp; laboratory&nbsp; report. </span></p> 
+<p  class=rvps44><span  class=rvts10>Prerequisites:  FOSC 3010L, FOSC 3020, BIOL
+2111K, 2211K and 2311K.</span></p> 
+</td>
+<td  width=322  valign=top><p  class=rvps45><span  class=rvts8>FOSC 4050&nbsp; -
+Forensic  Chemistry  .............. 3.00 Credits </span><span class=rvts9>Theory
+and   practice   of   quantitative&nbsp;   chemical&nbsp;   analysis,   chemical
+spectroscopy     and&nbsp;     instrumental&nbsp;     methods&nbsp;     of&nbsp;
+analysis:&nbsp;  uv,&nbsp;  visible and infrared (IR) spectrophotometry, Fourier
+transform  IR,&nbsp; fluorescence&nbsp; and fluorometry, atomic absorption&nbsp;
+and&nbsp;  emission,&nbsp;  Raman,  NMR,  mass-spec.,  etc.,  for structures and
+molecular     stereochemistry;     chromatographic     methods&nbsp;    of&nbsp;
+separation-TLC,&nbsp;         HPLC&nbsp;        and        GC.&nbsp;&nbsp;&nbsp;
+Laboratory&nbsp;&nbsp; report.</span></p> 
+<p  class=rvps46><span  class=rvts10>Prerequisite:  FOSC 3010L.&nbsp;&nbsp; CHEM
+2302K, CHEM 2351K, and</span></p> 
+<p class=rvps47><span class=rvts10>CHEM 3250</span></p>
+<p class=rvps48><span class=rvts9><br></span></p>
+<p    class=rvps49><span    class=rvts8>FOSC    4060&nbsp;    -&nbsp;   SEM-EDAX
+of</span></p> 
+<p            class=rvps50><span            class=rvts8>Trace           Evidence
+.............................................3.00      Credits      </span><span
+class=rvts9>Practice  of  scanning electron microscopy with energy-dispersive X-
+rays  for  physical  and elemental characterization of trace evidence, including
+gunshot   residue   particles,   image  processing  and  automation.  Laboratory
+report.</span></p> 
+<p  class=rvps51><span  class=rvts10>Prerequisite: FOSC 3020L; PHYS 2100, 2221K,
+2222K.</span></p> 
+<p class=rvps52><span class=rvts9><br></span></p>
+<p      class=rvps53><span      class=rvts8>FOSC      4090      -     Controlled
+Substance/Toxicology.....3.00   Credits   </span><span   class=rvts9>Theory  and
+practice  of  controlled  substance  identification&nbsp;  GC-MS, HPLC, TLC, and
+infrared   spectroscopy   (IR/FTIR),   etc.,   and  detection  of&nbsp;  alcohol
+toxication by breath testing.&nbsp;&nbsp; Laboratory&nbsp; report. </span></p> 
+<p   class=rvps54><span   class=rvts10>Prerequisite:&nbsp;   CHEM   3250K;  FOSC
+4050K.</span></p> 
+<p class=rvps55><span class=rvts9><br></span></p>
+<p class=rvps56><span class=rvts8>FOSC 4110&nbsp; - Basic Scanning</span></p>
+<p            class=rvps57><span            class=rvts8>Electron           Micro
+.........................................................2.00
+Credits</span></p> 
+<p  class=rvps58><span  class=rvts9>An  introduction  to instrumentation, design
+and  modes  of  operation  of  the scanning electron microscope, including image
+processing,   image   analysis,   specimen&nbsp;   preparation&nbsp;   and&nbsp;
+mounting,&nbsp;&nbsp;   photography&nbsp;&nbsp;   and  applications.  Laboratory
+report.</span></p> 
+<p    class=rvps59><span    class=rvts10>Prerequisite:    PHYS    2211,    2212,
+2100.</span></p> 
+<p class=rvps60><span class=rvts9><br></span></p>
+<p  class=rvps61><span  class=rvts8>FOSC  4120&nbsp;  - Electron Optics,EM/Quant
+Anal.....3.00 Credits</span></p> 
+<p   class=rvps62><span  class=rvts9>An  introduction  to  electron  microscopy,
+optical   designs   of   SEM,   TEM,   HVEM   and&nbsp;   STEM,&nbsp;  and&nbsp;
+to&nbsp;&nbsp;     microanalysis&nbsp;&nbsp;     with&nbsp;&nbsp;     wavelength
+dispersive,   energy-dispersive   and  X-ray  fluorescence  spectrometers.&nbsp;
+SEM-EDX practice and laboratory report.</span></p> 
+<p class=rvps63><span class=rvts10>Prerequisite: FOSC 4060, 4110.</span></p>
+<p class=rvps64><span class=rvts9><br></span></p>
+<p  class=rvps65><span  class=rvts8>FOSC  4130&nbsp;  -  Expert  Witness at Mock
+Trial  ........2.00  Credits  </span><span class=rvts9>Consideration of place of
+expert's  in  dispute resolution, cases that require expert testimony, pre-trail
+preparations,  rules  of  evidence,  articles  and exhibits, courtroom demeanor,
+participation at criminal mock trails and offer expert testimony.</span></p> 
+<p class=rvps66><span class=rvts10>Prerequisite: FOSC 3030.</span></p>
+<p class=rvps67><span class=rvts9><br></span></p>
+<p  class=rvps68><span  class=rvts8>FOSC  4140&nbsp;  -  Fingerprint  Technology
+.......2.00   Credits   </span><span   class=rvts9>Practice  of  fingerprinting:
+identification   and   development  of  latent  fingerprints,  enhancement&nbsp;
+by&nbsp;  laser,&nbsp;  automated&nbsp;  identification system, image processing
+and the expert fingerprint witness. </span></p> 
+<p class=rvps69><span class=rvts10>Prerequisite:&nbsp; FOSC 2100.</span></p>
+<p class=rvps70><span class=rvts9><br></span></p>
+<p      class=rvps71><span     class=rvts8>FOSC     4150&nbsp;     -     Evident
+Procedure/Medical</span></p> 
+<p                  class=rvps72><span                 class=rvts8>Tech/sur/Para
+..........................................................2.00 Credits
+</span><span   class=rvts9>Practice   in  evidence  protection  and  collection:
+biological  and  medical  evidence  and controls to be collected, injuries to be
+photographed,  legal  and  scientific  requirements  of  packaging  and storage,
+writing  medical  report and assisting the coroner, rules of evidence and expert
+witness. Laboratory report.</span></p> 
+<p class=rvps73><span class=rvts9><br></span></p>
+<p     class=rvps74><span     class=rvts8>FOSC     4160&nbsp;     -     Evidence
+Collect/</span></p> 
+<p            class=rvps75><span            class=rvts8>Science            Crime
+..........................................................2.00
+Credits</span></p> 
+<p  class=rvps76><span  class=rvts9>A  course for the first officer at the crime
+scene,&nbsp;  investigators  and  specialized  personnel in processing the crime
+scene  and  collection  of  evidence  for  a systematic investigation consistent
+with&nbsp;  standards  for  law  enforcement  agencies  and  rules  of evidence.
+Laboratory practice&nbsp; and report.</span></p> 
+<p    class=rvps77><span    class=rvts8>FOSC    4170&nbsp;   -   Ballistics   of
+Firearms/</span></p> 
+<p class=rvps78><span
+class=rvts8>Toolmar…………...……………………………….. 3.00
+Credits</span></p> 
+<p   class=rvps79><span  class=rvts9>Theory  and  practice  of  the  physics  of
+interior,  exterior,  and  terminal  ballistics  as applied to identification of
+fire  arms, bullets and casing, primer and powder, gunshot residue formation and
+deposition,  pellet  distribution, muzzle-to- target distance and bullet wounds.
+Lab report.</span></p> 
+<p    class=rvps80><span    class=rvts10>Prerequisite:    FOSC    2100,   3010L,
+3020.</span></p> 
+<p class=rvps81><span class=rvts9><br></span></p>
+<p  class=rvps82><span  class=rvts8>FOSC  4201L  -  Evidence Analysis/Research I
+.......3.00 Credits</span></p> 
+<p  class=rvps83><span  class=rvts9>On-campus  research and evidence examination
+or  Internship  I,  to  generate  crime laboratory proficiency and competence in
+defending   to&nbsp;   witness&nbsp;  in  the  presence  of  judges  in  a  moot
+court.</span></p> 
+<p  class=rvps84><span  class=rvts10>Prerequisite:  FOSC 2100, 3010L, FOSC 3020,
+FOSC  3030, FOSC 4060&nbsp; and&nbsp; FOSC&nbsp; 4070L;&nbsp; all&nbsp; or&nbsp;
+with&nbsp; the instructor's permission.</span></p> 
+<p class=rvps85><span class=rvts9><br></span></p>
+<p    class=rvps86><span   class=rvts8>FOSC   4999&nbsp;   -   Senior   Capstone
+Seminar................3.00  Credits  </span><span  class=rvts9>This  course  is
+designed  to  expose  students to the most advanced information available in the
+field  of  Criminal  Justice  and  Forensic  Science Students&nbsp; will also be
+taught  how&nbsp;  to&nbsp;  utilize&nbsp;  this&nbsp;  information during their
+coming  professional  careers.  New  technology in the field of Criminal Justice
+and  Forensic  Science will be taught to students. Students will learn how&nbsp;
+to&nbsp;  use&nbsp;  this  technology  and become proficient in its utilization.
+Further  students  will  be  taught  where  in-  formation  relating to Criminal
+Justice   and   Forensic   Science   is   located   and   how   to  access  this
+information.&nbsp;  Finally  the&nbsp;  ability&nbsp;  to&nbsp; synthesize large
+amounts   of   information   into   a  coherent  report&nbsp;  of&nbsp;  a&nbsp;
+subject&nbsp;   area   will   be   instilled  in  students.  Graduating  seniors
+only.</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps88><span class=rvts8><br></span></p>
+<p class=rvps89><span class=rvts8><br></span></p>
+<p class=rvps90><span class=rvts8><br></span></p>
+<p class=rvps91><span class=rvts11><br></span></p>
+</body></html>

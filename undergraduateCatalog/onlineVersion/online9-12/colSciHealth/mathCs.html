@@ -1,0 +1,4884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>mathCs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 24pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -3px;
+}
+span.rvts9
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -2px;
+}
+span.rvts10
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 2px;
+}
+span.rvts11
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 3px;
+}
+span.rvts12
+{
+ font-size: 18pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -4px;
+}
+span.rvts13
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #191919;
+}
+a.rvts14, span.rvts14
+{
+ font-size: 12pt;
+ font-family: 'calibri';
+ color: #548dd4;
+ text-decoration: none;
+}
+span.rvts15
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #548dd4;
+}
+span.rvts16
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts17
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts18
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts19
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts20
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts21
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts22
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts23
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts24
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts25
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts26
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts27
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts28
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts29
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts30
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts31
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts32
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts33
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts34
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts35
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts36
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts37
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts38
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts39
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts40
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts41
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts42
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts43
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts44
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts45
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts46
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts47
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts48
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts49
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts50
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts51
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts52
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts53
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts54
+{
+ font-size: 14pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts55
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts56
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts57
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts58
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts59
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts60
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts61
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts62
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts63
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts64
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts65
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts66
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts67
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts68
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts69
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts70
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts71
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts72
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts73
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts74
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts75
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts76
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts77
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts78
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts79
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts80
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts81
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts82
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts83
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts84
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts85
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts86
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts87
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts88
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts89
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts90
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts91
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts92
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts93
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts94
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts95
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts96
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts97
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts98
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts99
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts100
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts101
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts102
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts103
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts104
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts105
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts106
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts107
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: 1px;
+}
+span.rvts108
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts109
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts110
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts111
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts112
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ letter-spacing: -1px;
+}
+span.rvts113
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 18px;
+}
+.rvps3
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps4
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps7
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps8
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps9
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps10
+{
+ text-align: justify;
+ text-indent: 30px;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps11
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps12
+{
+ text-align: justify;
+ line-height: 1.04;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 1px 0px;
+ margin: 0px 8px 0px 17px;
+}
+.rvps13
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps14
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps15
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps16
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps17
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps18
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps19
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps20
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps21
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps22
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 0px 9px 0px 18px;
+}
+.rvps23
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 18px;
+}
+.rvps24
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 18px;
+}
+.rvps25
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 18px;
+}
+.rvps26
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps27
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 6px;
+}
+.rvps28
+{
+ text-align: right;
+}
+.rvps29
+{
+}
+.rvps30
+{
+ margin: 0px 0px 13px 0px;
+}
+.rvps31
+{
+ margin: 0px 0px 13px 0px;
+}
+.rvps32
+{
+ margin: 0px 0px 13px 0px;
+}
+.rvps33
+{
+ margin: 0px 0px 13px 0px;
+}
+.rvps34
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 0px 0px 6px;
+}
+.rvps35
+{
+ margin: 0px 0px 0px 6px;
+}
+.rvps36
+{
+}
+.rvps37
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+.rvps38
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+.rvps39
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+.rvps40
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+.rvps41
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 0px 0px 6px;
+}
+.rvps42
+{
+ margin: 0px 0px 13px 12px;
+}
+.rvps43
+{
+ margin: 0px 0px 13px 12px;
+}
+.rvps44
+{
+ margin: 0px 0px 13px 12px;
+}
+.rvps45
+{
+ margin: 0px 0px 13px 12px;
+}
+.rvps46
+{
+ margin: 0px 0px 13px 12px;
+}
+.rvps47
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 0px 0px 6px;
+}
+.rvps48
+{
+ margin: 3px 0px 0px 12px;
+}
+.rvps49
+{
+ margin: 3px 0px 0px 12px;
+}
+.rvps50
+{
+ margin: 3px 0px 0px 12px;
+}
+.rvps51
+{
+ margin: 3px 0px 0px 12px;
+}
+.rvps52
+{
+ margin: 3px 0px 0px 12px;
+}
+.rvps53
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 0px 0px 6px;
+}
+.rvps54
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps55
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps56
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps57
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps58
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps59
+{
+ margin: 0px 21px 0px 18px;
+}
+.rvps60
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 0px 0px 6px;
+}
+.rvps61
+{
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303538614"></a>
+<span   class=rvts0><span   class=rvts6>D</span></span><span   class=rvts0><span
+class=rvts7>E</span></span><span class=rvts0><span
+class=rvts8>P</span></span><span class=rvts0><span
+class=rvts7>A</span></span><span class=rvts0><span
+class=rvts9>R</span></span><span class=rvts0><span
+class=rvts7>TMENT</span></span><span       class=rvts0><span       class=rvts10>
+</span></span><span      class=rvts0><span     class=rvts7>OF</span></span><span
+class=rvts0><span     class=rvts11>     </span></span><span    class=rvts0><span
+class=rvts6>M</span></span><span class=rvts0><span
+class=rvts12>A</span></span><span class=rvts0><span
+class=rvts7>THEM</span></span><span class=rvts0><span
+class=rvts12>A</span></span><span       class=rvts0><span       class=rvts7>TICS
+</span></span></h2> 
+<h2 class=rvps2><a name="_Toc303538615"></a>
+<span   class=rvts0><span  class=rvts7>AND</span></span><span  class=rvts0><span
+class=rvts11>                </span></span><span               class=rvts0><span
+class=rvts6>C</span></span><span class=rvts0><span
+class=rvts7>OMPUTER</span></span><span      class=rvts0><span      class=rvts11>
+</span></span><span      class=rvts0><span      class=rvts6>S</span></span><span
+class=rvts0><span class=rvts7>CIENCE</span></span></h2> 
+<p class=rvps3><span class=rvts13><br></span></p>
+<p class=rvps4><span class=rvts13><br></span></p>
+<p  class=rvps5><a class=rvts14 href="#_Toc303538616">Bachelor Of Science Degree
+In    Computer    Science</a><span    class=rvts15>    </span><a    class=rvts14
+href="#_Toc303538617">(Mathematics        Emphasis)</a><span       class=rvts15>
+</span></p> 
+<p  class=rvps6><a  class=rvts14 href="#_Toc303538618">Program Of Study</a><span
+class=rvts15> </span></p> 
+<p  class=rvps7><a class=rvts14 href="#_Toc303538619">Bachelor Of Science Degree
+In Computer Science (Business Emphasis)</a><span class=rvts15> </span></p> 
+<p  class=rvps8><a  class=rvts14 href="#_Toc303538620">Program Of Study</a><span
+class=rvts15> </span></p> 
+<p  class=rvps9><a  class=rvts14  href="#_Toc303538621">Bach</a><a  class=rvts14
+href="#_Toc303538621">elor Of Arts Degree In Mathematics</a></p> 
+<p class=rvps10><a class=rvts14 href="#_Toc303538622">Program Of Study</a></p>
+<p class=rvps11><span class=rvts13><br></span></p>
+<p class=rvps12><span class=rvts13><br></span></p>
+<p class=rvps13><span class=rvts13><br></span></p>
+<p  class=rvps14><span  class=rvts13>The  Department of Mathematics and Computer
+Science  offers  programs  of  study  leading  to the Bachelor of Arts degree in
+Mathematics,  the  Bachelor  of Science degree in Computer Science with emphasis
+in  mathematics, Bachelor of Science degree in Computer Science with emphasis in
+business  and  offers graduate courses to support the Master of Education degree
+with  concentration  in  mathematics.  The  Department  also provides courses in
+support  of  the  curriculums  of  other departments at the University and minor
+programs  in  mathematics  and computer science. The minor programs are designed
+for  those students interested in pursuing graduate study or the wide variety of
+careers  in the fields of mathematics and computer science. Students in computer
+science  may choose to concentrate in business or mathematics. To be admitted to
+the  department  as  a  major,  the  student  must have a cumulative grade point
+average of 2.25 or higher.</span></p> 
+<p class=rvps15><span class=rvts13><br></span></p>
+<p  class=rvps16><span  class=rvts13>The  major  in  mathematics provides course
+work  that  leads  to  the  Bachelor  of  Arts  degree  in mathematics.&nbsp; In
+addition  to the general institutional requirements, the major in mathematics is
+required  to  complete  60 semester hours in major courses which include six (6)
+hours    of    foreign    language    and   15   semester   hours   of   general
+electives.</span></p> 
+<p class=rvps17><span class=rvts13><br></span></p>
+<p  class=rvps18><span  class=rvts13>The  Bachelor of Science degree in computer
+science  with  mathematics  emphasis  is  for those students who want to combine
+mathematics  and  computer  science.  In  addition  to the general institutional
+requirements,  the  major  completes  60  semester  hours in major courses which
+include  33  hours  in  computer science,&nbsp; 20 hours in mathematics courses,
+including&nbsp;  Calculus  II,  and  Calculus  III,  6  semester  hours in major
+electives&nbsp; and 1 hour in general electives.</span></p> 
+<p class=rvps19><span class=rvts13><br></span></p>
+<p  class=rvps20><span  class=rvts13>The  Bachelor of Science degree in computer
+science  with  business  emphasis  is  for  those  students  who want to combine
+computer  science  and  business.  In  addition  to  the  general  institutional
+requirements,  the  major  completes  60  semester hours in major courses, which
+include  39 hours in computer science and mathematics courses,&nbsp; 12 hours in
+business  courses,  6  semester hours in major electives and 3 semester hours in
+general  electives.&nbsp;  The  Bachelor  of  Science degree in computer science
+with  business emphasis is a cooperative program between Albany State University
+and  Albany  Technical College that allows qualified students to earn 99 quarter
+hours  at  Albany Technical College and then transfer to Albany State University
+to  complete  the  requirements for the Bachelor of Science degree with emphasis
+in  business.&nbsp;  Upon  admission  to  Albany  State  University students may
+transfer  up  to 60 semester hours of credit to Albany State to satisfy Areas A,
+B, C, D, and E of the Core Curriculum.</span></p> 
+<p class=rvps21><span class=rvts13><br></span></p>
+<p  class=rvps22><span  class=rvts13>All  majors  must complete a minimum of 126
+semester  hours. All majors and minors in the department must achieve a grade of
+"C"  or  better  in  all mathematics, science, and computer science and business
+courses.  A  cumulative  grade  point  average  of at least 2.25 is required for
+graduation. </span></p> 
+<p class=rvps23><span class=rvts16><br></span></p>
+<p class=rvps24><span class=rvts17><br></span></p>
+<p class=rvps25><span class=rvts18><br></span></p>
+<p class=rvps26><span class=rvts19><br></span></p>
+<h2 class=rvps27><a name="_Toc303538616"></a>
+<span         class=rvts0><span         class=rvts20>BACHELOR</span></span><span
+class=rvts0><span     class=rvts21>     </span></span><span    class=rvts0><span
+class=rvts20>OF</span></span><span        class=rvts0><span        class=rvts22>
+</span></span><span   class=rvts0><span  class=rvts20>SCIENCE</span></span><span
+class=rvts0><span     class=rvts23>     </span></span><span    class=rvts0><span
+class=rvts20>DEGREE</span></span><span      class=rvts0><span      class=rvts24>
+</span></span><span     class=rvts0><span     class=rvts20>IN</span></span><span
+class=rvts0><span     class=rvts25>     </span></span><span    class=rvts0><span
+class=rvts20>COMPUTER</span></span><span     class=rvts0><span     class=rvts26>
+</span></span><span class=rvts0><span class=rvts20>SCIENCE</span></span></h2> 
+<h2 class=rvps27><a name="_Toc303538617"></a>
+<span   class=rvts0><span  class=rvts20>(M</span></span><span  class=rvts0><span
+class=rvts27>A</span></span><span class=rvts0><span
+class=rvts20>THEM</span></span><span class=rvts0><span
+class=rvts28>A</span></span><span class=rvts0><span
+class=rvts20>TICS</span></span><span       class=rvts0><span       class=rvts29>
+</span></span><span class=rvts0><span
+class=rvts20>EMPHASIS)</span></span></h2> 
+<div   class=rvps29><table   width=721   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts30>Area</span></p>
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td  width=88  height=20 valign=bottom><p class=rvps28><span class=rvts30>Credit
+hours</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=157  height=20  valign=bottom><p><span  class=rvts30>Core  Curriculum
+</span></p> 
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td  width=88  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(60
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA A1</span></p>
+</td>
+<td   width=284   height=20   valign=bottom><p><span  class=rvts31>Communication
+Skills</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA A2</span></p>
+</td>
+<td   width=284   height=20   valign=bottom><p><span   class=rvts31>Quantitative
+Skills</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA B</span></p>
+</td>
+<td   width=284   height=20   valign=bottom><p><span  class=rvts31>Institutional
+Options</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>5</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA C</span></p>
+</td>
+<td       colspan=2       width=434       height=20       valign=bottom><p><span
+class=rvts31>Humanities, Fine Arts and Ethics</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA D</span></p>
+</td>
+<td  colspan=2  width=434  height=20 valign=bottom><p><span class=rvts31>Natural
+Science, Math &amp; Tech</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>11</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA E</span></p>
+</td>
+<td     width=284     height=20    valign=bottom><p><span    class=rvts31>Social
+Sciences</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>12</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31>AREA F</span></p>
+</td>
+<td  width=284  height=20 valign=bottom><p><span class=rvts31>Courses Related to
+Major</span></p> 
+</td>
+<td             width=136            height=20            valign=bottom><p><span
+class=rvts31>Prerequisite</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>17</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1201</span></p> 
+</td>
+<td  colspan=2  width=434 height=20 valign=bottom><p><span class=rvts31>Intro to
+Computer Science (3 hrs)</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1301</span></p> 
+</td>
+<td  width=284  height=20 valign=bottom><p><span class=rvts31>Computer Science I
+(4 hrs)</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1302</span></p> 
+</td>
+<td  width=284 height=20 valign=bottom><p><span class=rvts31>Computer Science II
+(4 hrs)</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+2411</span></p> 
+</td>
+<td  width=284  height=20  valign=bottom><p><span class=rvts31>Linear Algebra (3
+hrs)</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+2411</span></p> 
+</td>
+<td  width=284 height=20 valign=bottom><p><span class=rvts31>Basic Statistics (3
+hrs)</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td    width=157   height=20   valign=bottom><p><span   class=rvts30>Above   The
+Core</span></p> 
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td   width=88  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(5
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=455 height=20 valign=bottom><p><span class=rvts30>Area G -
+Major Requirements</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=88  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(54
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3111</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Discrete
+Structures</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3122</span></p> 
+</td>
+<td     width=284     height=20     valign=bottom><p><span     class=rvts31>Data
+Structures</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3211</span></p> 
+</td>
+<td  colspan=2  width=434 height=20 valign=bottom><p><span class=rvts31>Computer
+Organization &amp; Architecture I</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3212</span></p> 
+</td>
+<td  colspan=2  width=434 height=20 valign=bottom><p><span class=rvts31>Computer
+Organization&amp; Architecture II</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4113</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span   class=rvts31>Operating
+Systems</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4123</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Computer
+Networks</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4151</span></p> 
+</td>
+<td     width=284     height=20    valign=bottom><p><span    class=rvts31>System
+Simulation</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4221</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Software
+Engineering</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4311</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Computer
+Graphics</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4211</span></p> 
+</td>
+<td  width=284  height=20  valign=bottom><p><span  class=rvts31>Systems Analysis
+I</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4921</span></p> 
+</td>
+<td   width=284  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+I</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4922</span></p> 
+</td>
+<td   width=284  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+II</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+1211</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Calculus
+I</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+2212</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Calculus
+II</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+2213</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span    class=rvts31>Calculus
+III</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+3211</span></p> 
+</td>
+<td  colspan=2  width=434 height=20 valign=bottom><p><span class=rvts31>Ordinary
+Differential Equations</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+3423</span></p> 
+</td>
+<td       colspan=2       width=434       height=20       valign=bottom><p><span
+class=rvts31>Introductions to Operations Research</span></p> 
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span     class=rvts31>MATH
+4215</span></p> 
+</td>
+<td    width=284    height=20    valign=bottom><p><span   class=rvts31>Numerical
+Analysis</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=88       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=88 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=157     height=20     valign=bottom><p><span    class=rvts30>Major
+Electives</span></p> 
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td   width=88  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(6
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   colspan=2   width=455  height=20  valign=bottom><p><span  class=rvts31>Any
+courses in the college curriculum</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=88 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=157 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=284 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=88 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=455  height=20  valign=bottom><p><span  class=rvts30>Total
+Required For Graduation</span></p> 
+</td>
+<td width=136 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=88  height=20  valign=bottom><p  class=rvps28><span class=rvts30>(125
+hours)</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps30><span class=rvts31><br></span></p>
+<p class=rvps31><span class=rvts31><br></span></p>
+<p class=rvps32><span class=rvts31><br></span></p>
+<p class=rvps33><span class=rvts31><br></span></p>
+<h2 class=rvps34><a name="_Toc303538618"></a>
+<span   class=rvts0><span   class=rvts32>P</span></span><span  class=rvts0><span
+class=rvts33>ROGRAM</span></span><span      class=rvts0><span      class=rvts34>
+</span></span><span     class=rvts0><span     class=rvts33>OF</span></span><span
+class=rvts0><span     class=rvts35>     </span></span><span    class=rvts0><span
+class=rvts32>S</span></span><span class=rvts0><span
+class=rvts33>TUDY</span></span><span       class=rvts0><span       class=rvts36>
+</span></span><span     class=rvts0><span    class=rvts33>FOR</span></span><span
+class=rvts0><span     class=rvts37>     </span></span><span    class=rvts0><span
+class=rvts33>THE</span></span><span        class=rvts0><span       class=rvts38>
+</span></span><span      class=rvts0><span     class=rvts32>B</span></span><span
+class=rvts0><span    class=rvts33>ACHELOR</span></span><span   class=rvts0><span
+class=rvts39>                </span></span><span               class=rvts0><span
+class=rvts33>OF</span></span><span        class=rvts0><span        class=rvts40>
+</span></span><span      class=rvts0><span     class=rvts32>S</span></span><span
+class=rvts0><span    class=rvts33>CIENCE</span></span><span    class=rvts0><span
+class=rvts41>                </span></span><span               class=rvts0><span
+class=rvts32>D</span></span><span      class=rvts0><span      class=rvts33>EGREE
+IN</span></span><span    class=rvts0><span   class=rvts42>   </span></span><span
+class=rvts0><span       class=rvts32>C</span></span><span      class=rvts0><span
+class=rvts33>OMPUTER</span></span><span      class=rvts0><span     class=rvts43>
+</span></span><span      class=rvts0><span     class=rvts32>S</span></span><span
+class=rvts0><span    class=rvts33>CIENCE</span></span><span    class=rvts0><span
+class=rvts44>                </span></span><span               class=rvts0><span
+class=rvts32>(M</span></span><span class=rvts0><span
+class=rvts45>A</span></span><span class=rvts0><span
+class=rvts33>THEM</span></span><span class=rvts0><span
+class=rvts46>A</span></span><span class=rvts0><span
+class=rvts33>TICS</span></span><span       class=rvts0><span       class=rvts47>
+</span></span><span      class=rvts0><span     class=rvts32>E</span></span><span
+class=rvts0><span    class=rvts33>MPHASIS</span></span><span   class=rvts0><span
+class=rvts32>)</span></span></h2> 
+<p   class=rvps35><span  class=rvts19>  </span><span  class=rvts31>126  semester
+hours</span></p> 
+<div   class=rvps29><table   width=719   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  colspan=2  width=281 height=20 valign=bottom><p><span class=rvts30>Freshman
+Year</span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Fall</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>ENGL 1101</span></p>
+</td>
+<td   width=190   height=20  valign=bottom><p><span  class=rvts31>English  Comp.
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>ENGL 1102</span></p>
+</td>
+<td   width=184   height=20  valign=bottom><p><span  class=rvts31>English  Comp.
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 1201</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span class=rvts31>Intro to Computer
+Science</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>COMM 1100</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Fund.  of Public
+Speaking</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>ASU 1201</span></p>
+</td>
+<td   width=190  height=20  valign=bottom><p><span  class=rvts31>Foundations  of
+College Suc</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MATH 1113</span></p>
+</td>
+<td             width=184            height=20            valign=bottom><p><span
+class=rvts31>Pre-Calculus</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>MATH 1111</span></p>
+</td>
+<td     width=190    height=20    valign=bottom><p><span    class=rvts31>College
+Algebra</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MUSC 1100</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31>Music</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>HIST 1111</span></p>
+</td>
+<td     width=190    height=20    valign=bottom><p><span    class=rvts31>History
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 1301</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Computer Science
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=50  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(15
+hrs)</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=281 height=20 valign=bottom><p><span class=rvts30>Sophomore
+Year</span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=84       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Fall</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>ENGL 2111</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span  class=rvts31>World Literature
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>POLS 1101</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>US &amp; Georgia
+Govt</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 1302</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span  class=rvts31>Computer Science
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MATH 2411</span></p>
+</td>
+<td     width=184     height=20     valign=bottom><p><span    class=rvts31>Basis
+Statistics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>MATH 1211</span></p>
+</td>
+<td    width=190    height=20    valign=bottom><p><span    class=rvts31>Calculus
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>PHYS 2221</span></p>
+</td>
+<td   width=184   height=20  valign=bottom><p><span  class=rvts31>Principles  of
+Physics I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>HIST 1002</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span  class=rvts31>Intro to African
+Diaspora</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 3122</span></p>
+</td>
+<td     width=184     height=20     valign=bottom><p><span     class=rvts31>Data
+Structures</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>PEDH</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>1</span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MATH 2212</span></p>
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Calculus
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30> (14 hrs)</span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td  width=50  height=20  valign=bottom><p  class=rvps36><span  class=rvts30>(17
+hrs)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=77     height=20     valign=bottom><p><span    class=rvts30>Junior
+Year</span></p> 
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Fall</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>PHYS 2222</span></p>
+</td>
+<td   width=190   height=20  valign=bottom><p><span  class=rvts31>Principles  of
+Physics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>HIST 1112</span></p>
+</td>
+<td   width=184   height=20  valign=bottom><p><span  class=rvts31>World  History
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 3211</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span  class=rvts31>Comp. Org. &amp;
+Arch. 1</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td    width=84    height=20    valign=bottom><p><span   class=rvts31>CSCI&nbsp;
+4311</span></p> 
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Computer
+Graphics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 3111</span></p>
+</td>
+<td    width=190    height=20    valign=bottom><p><span    class=rvts31>Discrete
+Structures</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 4211</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>System  Analysis
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>MATH 2111</span></p>
+</td>
+<td     width=190     height=20    valign=bottom><p><span    class=rvts31>Linear
+Algebra</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 3212</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Comp. Org. &amp;
+Arch II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>MATH 2213</span></p>
+</td>
+<td    width=190    height=20    valign=bottom><p><span    class=rvts31>Calculus
+III</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MATH 3211</span></p>
+</td>
+<td   width=184   height=20   valign=bottom><p><span   class=rvts31>Differential
+Equations</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30> Total</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(17 hrs)</span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=77     height=20     valign=bottom><p><span    class=rvts30>Senior
+Year</span></p> 
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Fall</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 4113</span></p>
+</td>
+<td    width=190    height=20    valign=bottom><p><span   class=rvts31>Operating
+Systems</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 4123</span></p>
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Computer
+Networks</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td    width=77    height=20    valign=bottom><p><span   class=rvts31>CSCI&nbsp;
+4921</span></p> 
+</td>
+<td   width=190  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>MATH 4215</span></p>
+</td>
+<td  width=184  height=20 valign=bottom><p><span class=rvts31>Numerical Analysis
+</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>CSCI 4151</span></p>
+</td>
+<td     width=190    height=20    valign=bottom><p><span    class=rvts31>Systems
+Simulation</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  colspan=2  width=282  height=20  valign=bottom><p><span class=rvts31>AREA E
+Elective</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts31>MATH 3423</span></p>
+</td>
+<td  width=190  height=20  valign=bottom><p><span class=rvts31>Intro. Operations
+Research</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI</span></p>
+</td>
+<td     width=184     height=20     valign=bottom><p><span    class=rvts31>Major
+Elective</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td    width=77    height=20    valign=bottom><p><span   class=rvts31>CSCI&nbsp;
+4221</span></p> 
+</td>
+<td    width=190    height=20    valign=bottom><p><span    class=rvts31>Software
+Engineering</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts31>CSCI 4922</span></p>
+</td>
+<td   width=184  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=281  height=20  valign=bottom><p><span  class=rvts31>Major
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  colspan=2  width=282  height=20 valign=bottom><p><span class=rvts31>General
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=77 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=190 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td width=84 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps37><span class=rvts31><br></span></p>
+<p class=rvps38><span class=rvts31><br></span></p>
+<p class=rvps39><span class=rvts31><br></span></p>
+<p class=rvps40><span class=rvts31><br></span></p>
+<h2 class=rvps41><a name="_Toc303538619"></a>
+<span         class=rvts0><span         class=rvts20>BACHELOR</span></span><span
+class=rvts0><span     class=rvts48>     </span></span><span    class=rvts0><span
+class=rvts20>OF</span></span><span        class=rvts0><span        class=rvts49>
+</span></span><span   class=rvts0><span  class=rvts20>SCIENCE</span></span><span
+class=rvts0><span     class=rvts50>     </span></span><span    class=rvts0><span
+class=rvts20>DEGREE</span></span><span      class=rvts0><span      class=rvts51>
+</span></span><span     class=rvts0><span     class=rvts20>IN</span></span><span
+class=rvts0><span     class=rvts52>     </span></span><span    class=rvts0><span
+class=rvts20>COMPUTER</span></span><span     class=rvts0><span     class=rvts53>
+</span></span><span            class=rvts0><span            class=rvts20>SCIENCE
+(BUSINESS</span></span><span           class=rvts0><span           class=rvts54>
+</span></span><span  class=rvts0><span class=rvts20>EMPHASIS)</span></span><span
+class=rvts0><span class=rvts19> </span></span></h2> 
+<div   class=rvps29><table   width=724   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts30>Area</span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td  width=91  height=20 valign=bottom><p class=rvps28><span class=rvts30>Credit
+hours</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=113  height=20  valign=bottom><p><span  class=rvts30>Core  Curriculum
+</span></p> 
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td  width=91  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(60
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA A1</span></p>
+</td>
+<td   width=334   height=20   valign=bottom><p><span  class=rvts31>Communication
+Skills</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA A2</span></p>
+</td>
+<td   width=334   height=20   valign=bottom><p><span   class=rvts31>Quantitative
+Skills</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA B</span></p>
+</td>
+<td   width=334   height=20   valign=bottom><p><span   class=rvts31>Insitutional
+Options</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>5</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA C</span></p>
+</td>
+<td       colspan=2       width=478       height=20       valign=bottom><p><span
+class=rvts31>Humanities, Fine Arts and Ethics</span></p> 
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA D</span></p>
+</td>
+<td  colspan=2  width=478  height=20 valign=bottom><p><span class=rvts31>Natural
+Science, Math &amp; Tech</span></p> 
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>11</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA E</span></p>
+</td>
+<td     width=334     height=20    valign=bottom><p><span    class=rvts31>Social
+Sciences</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>12</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31>AREA F</span></p>
+</td>
+<td  width=334  height=20 valign=bottom><p><span class=rvts31>Courses Related to
+Major</span></p> 
+</td>
+<td       width=130      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>Prerequisite</span></p> 
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>17</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>ACCT
+2101</span></p> 
+</td>
+<td       colspan=2       width=478       height=20       valign=bottom><p><span
+class=rvts31>Accounting Principles I (3 hrs)</span></p> 
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1201</span></p> 
+</td>
+<td       colspan=3       width=583       height=20       valign=bottom><p><span
+class=rvts31>Introduction to Computer Science (3 hrs)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1301</span></p> 
+</td>
+<td  width=334  height=20 valign=bottom><p><span class=rvts31>Computer Science I
+(4 hrs)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+1302</span></p> 
+</td>
+<td  width=334 height=20 valign=bottom><p><span class=rvts31>Computer Science II
+(4 hrs)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MATH
+2411</span></p> 
+</td>
+<td  width=334 height=20 valign=bottom><p><span class=rvts31>Basic Statistics (3
+hrs)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td    width=113   height=20   valign=bottom><p><span   class=rvts31>Above   The
+Core</span></p> 
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td   width=91  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(5
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=461 height=20 valign=bottom><p><span class=rvts30>Area G -
+Major Requirements</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=91  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(52
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=461 height=20 valign=bottom><p><span class=rvts30>Computer
+Science Courses (30 hours)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+2211</span></p> 
+</td>
+<td   width=334   height=20   valign=bottom><p><span  class=rvts31>Visual  Basic
+Programming</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3111</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span    class=rvts31>Discrete
+Structures</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3122</span></p> 
+</td>
+<td     width=334     height=20     valign=bottom><p><span     class=rvts31>Data
+Structures</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+3132</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span    class=rvts31>Database
+Management</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4211</span></p> 
+</td>
+<td  width=334  height=20  valign=bottom><p><span  class=rvts31>Systems Analysis
+I</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4212</span></p> 
+</td>
+<td  width=334  height=20  valign=bottom><p><span  class=rvts31>Systems Analysis
+II</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4113</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span   class=rvts31>Operating
+Systems</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4123</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span    class=rvts31>Computer
+Networks</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4311</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span    class=rvts31>Computer
+Graphics</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4921</span></p> 
+</td>
+<td   width=334  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+I</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>CSCI
+4922</span></p> 
+</td>
+<td   width=334  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+II</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td       colspan=2       width=461       height=20       valign=bottom><p><span
+class=rvts31>Mathematics Courses (10 hours)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MATH
+1211</span></p> 
+</td>
+<td    width=334    height=20    valign=bottom><p><span    class=rvts31>Calculus
+I</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MATH
+2111</span></p> 
+</td>
+<td     width=334     height=20    valign=bottom><p><span    class=rvts31>Linear
+Algebra</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MATH
+3423</span></p> 
+</td>
+<td    width=334    height=20   valign=bottom><p><span   class=rvts31>Operations
+Research</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td       colspan=2       width=461       height=20       valign=bottom><p><span
+class=rvts31>Management/Economic Courses (12 hours)</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>ACCT
+2102</span></p> 
+</td>
+<td    width=334    height=20   valign=bottom><p><span   class=rvts31>Accounting
+Principles II</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>ECON
+2106</span></p> 
+</td>
+<td       colspan=2       width=478       height=20       valign=bottom><p><span
+class=rvts31>Principles of Microeconomics</span></p> 
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MGMT
+3105</span></p> 
+</td>
+<td  colspan=2  width=478  height=20  valign=bottom><p><span  class=rvts31>Legal
+Environment for Business</span></p> 
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span     class=rvts31>MKTG
+3120</span></p> 
+</td>
+<td   width=334   height=20  valign=bottom><p><span  class=rvts31>Principles  of
+Marketing</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=91       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113     height=20     valign=bottom><p><span    class=rvts30>Major
+Electives</span></p> 
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td   width=91  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(6
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=461 height=20 valign=bottom><p><span class=rvts31>Six hours
+from the following courses:</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=461 height=20 valign=bottom><p><span class=rvts31>Computer
+Science Courses 2000 Level or higher</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td       colspan=2       width=461       height=20       valign=bottom><p><span
+class=rvts31>Management Courses 3000 Level or above</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=113    height=20    valign=bottom><p><span    class=rvts30>General
+Electives</span></p> 
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td   width=91  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(2
+hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   colspan=2   width=461  height=20  valign=bottom><p><span  class=rvts31>Any
+courses in the college curriculum</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=113 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=334 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=91 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=461  height=20  valign=bottom><p><span  class=rvts30>Total
+Required For Graduation</span></p> 
+</td>
+<td width=130 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=91  height=20  valign=bottom><p  class=rvps28><span class=rvts30>(125
+hours)</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps42><span class=rvts55><br></span></p>
+<p class=rvps43><span class=rvts55><br></span></p>
+<p class=rvps44><span class=rvts55><br></span></p>
+<p class=rvps45><span class=rvts55><br></span></p>
+<p class=rvps46><span class=rvts55><br></span></p>
+<h2 class=rvps47><a name="_Toc303538620"></a>
+<span   class=rvts0><span   class=rvts32>P</span></span><span  class=rvts0><span
+class=rvts33>ROGRAM</span></span><span      class=rvts0><span      class=rvts56>
+</span></span><span     class=rvts0><span     class=rvts33>OF</span></span><span
+class=rvts0><span     class=rvts57>     </span></span><span    class=rvts0><span
+class=rvts32>S</span></span><span class=rvts0><span
+class=rvts33>TUDY</span></span><span       class=rvts0><span       class=rvts58>
+</span></span><span     class=rvts0><span    class=rvts33>FOR</span></span><span
+class=rvts0><span     class=rvts59>     </span></span><span    class=rvts0><span
+class=rvts33>THE</span></span><span        class=rvts0><span       class=rvts60>
+</span></span><span      class=rvts0><span     class=rvts32>B</span></span><span
+class=rvts0><span    class=rvts33>ACHELOR</span></span><span   class=rvts0><span
+class=rvts61>                </span></span><span               class=rvts0><span
+class=rvts33>OF</span></span><span        class=rvts0><span        class=rvts62>
+</span></span><span      class=rvts0><span     class=rvts32>S</span></span><span
+class=rvts0><span    class=rvts33>CIENCE</span></span><span    class=rvts0><span
+class=rvts63>                </span></span><span               class=rvts0><span
+class=rvts32>D</span></span><span      class=rvts0><span      class=rvts33>EGREE
+IN</span></span><span    class=rvts0><span   class=rvts64>   </span></span><span
+class=rvts0><span       class=rvts32>C</span></span><span      class=rvts0><span
+class=rvts33>OMPUTER</span></span><span      class=rvts0><span     class=rvts65>
+</span></span><span      class=rvts0><span     class=rvts32>S</span></span><span
+class=rvts0><span    class=rvts33>CIENCE</span></span><span    class=rvts0><span
+class=rvts66>                </span></span><span               class=rvts0><span
+class=rvts32>(B</span></span><span class=rvts0><span
+class=rvts33>USINESS</span></span><span      class=rvts0><span     class=rvts67>
+</span></span><span      class=rvts0><span     class=rvts32>E</span></span><span
+class=rvts0><span    class=rvts33>MPHASIS</span></span><span   class=rvts0><span
+class=rvts32>)</span></span></h2> 
+<p class=rvps35><span class=rvts31>125 Semester Hours</span></p>
+<div   class=rvps29><table   width=719   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td   width=83   height=20   valign=bottom><p><span  class=rvts30>Freshman  Year
+</span></p> 
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30>Fall </span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>ENGL 1101</span></p>
+</td>
+<td   width=169   height=20   valign=bottom><p><span  class=rvts31>English  Comp
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>ENGL 1102</span></p>
+</td>
+<td   width=184   height=20  valign=bottom><p><span  class=rvts31>English  Comp.
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>MATH 1111</span></p>
+</td>
+<td     width=169    height=20    valign=bottom><p><span    class=rvts31>College
+Algebra</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>MATH 1113</span></p>
+</td>
+<td             width=184            height=20            valign=bottom><p><span
+class=rvts31>Precalculus</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>ASU 1201</span></p>
+</td>
+<td  width=169  height=20  valign=bottom><p><span class=rvts31>Found. of College
+Succ</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>COMM 1100</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Fund.  of Public
+Speaking</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td    width=83    height=20    valign=bottom><p><span   class=rvts31>CSCI&nbsp;
+1201</span></p> 
+</td>
+<td   width=169   height=20  valign=bottom><p><span  class=rvts31>Intr  to  Comp
+Science</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td    width=99    height=20    valign=bottom><p><span   class=rvts31>CSCI&nbsp;
+1301</span></p> 
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Computer Science
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>HIST 1111</span></p>
+</td>
+<td     width=169    height=20    valign=bottom><p><span    class=rvts31>History
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>MUSC 1100</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31>Music</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=266 height=20 valign=bottom><p><span class=rvts30>Sophomore
+Year</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>MATH 1211</span></p>
+</td>
+<td    width=169    height=20    valign=bottom><p><span    class=rvts31>Calculus
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>MATH 2411</span></p>
+</td>
+<td     width=184     height=20     valign=bottom><p><span    class=rvts31>Basic
+Statistics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>ENGL 2111</span></p>
+</td>
+<td  width=169  height=20  valign=bottom><p><span  class=rvts31>World Literature
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>POLS 1101</span></p>
+</td>
+<td  width=184  height=20 valign=bottom><p><span class=rvts31>U.S. &amp; Georgia
+Govt</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 1302</span></p>
+</td>
+<td  width=169  height=20  valign=bottom><p><span  class=rvts31>Computer Science
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>ACCT 2102</span></p>
+</td>
+<td    width=184    height=20   valign=bottom><p><span   class=rvts31>Accounting
+Principles II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>HIST 1002</span></p>
+</td>
+<td  width=169  height=20  valign=bottom><p><span class=rvts31>Intro. to African
+Diaspora</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 3122</span></p>
+</td>
+<td     width=184     height=20     valign=bottom><p><span     class=rvts31>Data
+Structures</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>ACCT 2101</span></p>
+</td>
+<td    width=169    height=20   valign=bottom><p><span   class=rvts31>Accounting
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>BIOL 1111</span></p>
+</td>
+<td  width=184 height=20 valign=bottom><p><span class=rvts31>Intro to Biological
+Science</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td  width=50  height=20  valign=bottom><p  class=rvps28><span  class=rvts30>(16
+hrs)</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=83     height=20     valign=bottom><p><span    class=rvts30>Junior
+Year</span></p> 
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 3111</span></p>
+</td>
+<td   width=169   height=20  valign=bottom><p><span  class=rvts31>Discrete&nbsp;
+Structures</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 2211</span></p>
+</td>
+<td   width=184   height=20   valign=bottom><p><span  class=rvts31>Visual  Basic
+Programming</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>MATH 2111</span></p>
+</td>
+<td     width=169     height=20    valign=bottom><p><span    class=rvts31>Linear
+Algebra</span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31>3</span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>ECON 2106</span></p>
+</td>
+<td       width=184      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>Principles of Microeconomics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>BIOL 1112</span></p>
+</td>
+<td  width=169 height=20 valign=bottom><p><span class=rvts31>Intro to Biological
+Science</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 4211</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>System  Analysis
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 3132</span></p>
+</td>
+<td    width=169    height=20    valign=bottom><p><span    class=rvts31>Database
+Management</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>HIST 1112</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Survey  of World
+History II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>ECON 2105</span></p>
+</td>
+<td             width=169            height=20            valign=bottom><p><span
+class=rvts31>Macroeconomics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 4311</span></p>
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Computer
+Graphics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       colspan=2       width=297       height=20       valign=bottom><p><span
+class=rvts31>PEDH</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=83     height=20     valign=bottom><p><span    class=rvts30>Senior
+Year</span></p> 
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 4113</span></p>
+</td>
+<td    width=169    height=20    valign=bottom><p><span   class=rvts31>Operating
+Systems</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 4123</span></p>
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Computer
+Networks</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 4212</span></p>
+</td>
+<td   width=169  height=20  valign=bottom><p><span  class=rvts31>System  Analyis
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>MGMT 3120</span></p>
+</td>
+<td   width=184   height=20   valign=bottom><p><span  class=rvts31>Principle  of
+Marketing</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>MATH 3423</span></p>
+</td>
+<td   width=169  height=20  valign=bottom><p><span  class=rvts31>Intro.  to  Op.
+Research</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>CSCI 4922</span></p>
+</td>
+<td   width=184  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>MGMT 3105</span></p>
+</td>
+<td   width=169  height=20  valign=bottom><p><span  class=rvts31>Legal  Env.  of
+Business</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  colspan=2  width=297  height=20 valign=bottom><p><span class=rvts31>General
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts31>CSCI 4921</span></p>
+</td>
+<td   width=169  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td  colspan=2  width=297  height=20  valign=bottom><p><span  class=rvts31>Major
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=83     height=20     valign=bottom><p><span     class=rvts31>Major
+Electives</span></p> 
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31> </span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=83 height=20 valign=bottom><p><span class=rvts30>Total</span></p>
+</td>
+<td width=169 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td width=99 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps48><span class=rvts19><br></span></p>
+<p class=rvps49><span class=rvts19><br></span></p>
+<p class=rvps50><span class=rvts19><br></span></p>
+<p class=rvps51><span class=rvts19><br></span></p>
+<p class=rvps52><span class=rvts19><br></span></p>
+<h2 class=rvps53><a name="_Toc303538621"></a>
+<span   class=rvts0><span   class=rvts32>B</span></span><span  class=rvts0><span
+class=rvts33>ACHELOR</span></span><span      class=rvts0><span     class=rvts68>
+</span></span><span     class=rvts0><span     class=rvts33>OF</span></span><span
+class=rvts0><span     class=rvts69>     </span></span><span    class=rvts0><span
+class=rvts32>A</span></span><span class=rvts0><span
+class=rvts70>R</span></span><span class=rvts0><span
+class=rvts33>TS</span></span><span        class=rvts0><span        class=rvts71>
+</span></span><span      class=rvts0><span     class=rvts32>D</span></span><span
+class=rvts0><span     class=rvts33>EGREE</span></span><span    class=rvts0><span
+class=rvts72>                </span></span><span               class=rvts0><span
+class=rvts33>IN</span></span><span        class=rvts0><span        class=rvts73>
+</span></span><span      class=rvts0><span     class=rvts32>M</span></span><span
+class=rvts0><span       class=rvts74>A</span></span><span      class=rvts0><span
+class=rvts33>THEM</span></span><span class=rvts0><span
+class=rvts75>A</span></span><span class=rvts0><span
+class=rvts33>TICS</span></span></h2> 
+<div   class=rvps29><table   width=733   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts30>Area</span></p>
+</td>
+<td colspan=2 width=346 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>Credit hours</span></p> 
+</td>
+<td rowspan=15 width=6><br>
+</td>
+</tr>
+<tr valign=top>
+<td   width=95  height=20  valign=bottom><p><span  class=rvts30>Core  Curriculum
+</span></p> 
+</td>
+<td colspan=2 width=346 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(60 hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA A1</span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31>Communication Skills</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA A2</span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31>Quantitative Skills</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA B</span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31>Insitutional Options</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>5</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA C</span></p>
+</td>
+<td       colspan=4       width=496       height=20       valign=bottom><p><span
+class=rvts31>Humanities, Fine Arts and Ethics</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA D</span></p>
+</td>
+<td  colspan=4  width=496  height=20 valign=bottom><p><span class=rvts31>Natural
+Science, Math &amp; Tech</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>10</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA E</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Social
+Sciences</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>12</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>AREA F</span></p>
+</td>
+<td  colspan=2  width=346  height=20 valign=bottom><p><span class=rvts31>Courses
+Related to Major</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31>Prerequisite</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>18</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 1211</span></p>
+</td>
+<td  colspan=2  width=346 height=20 valign=bottom><p><span class=rvts31>Calculus
+I (4 hrs)</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=94 height=20 valign=bottom><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 2212</span></p>
+</td>
+<td  colspan=2  width=346 height=20 valign=bottom><p><span class=rvts31>Calculus
+II (4 hrs)</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=94 height=20 valign=bottom><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 2213</span></p>
+</td>
+<td  colspan=2  width=346 height=20 valign=bottom><p><span class=rvts31>Calculus
+III (4 hrs)</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=94 height=20 valign=bottom><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 2411</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span  class=rvts31>Basic
+Statistics (3 hrs)</span></p> 
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=94 height=20 valign=bottom><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>FREN 1001</span></p>
+</td>
+<td  colspan=6  width=604  height=20  valign=bottom><p><span  class=rvts31>Elem.
+French I or GRMN 1001 Elem German&nbsp; I (3 hrs)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td colspan=2 width=346 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=136 height=20 valign=bottom><br>
+</td>
+<td colspan=2 width=94 height=20 valign=bottom><br>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=149 height=20 valign=bottom><p><span class=rvts30>Above The
+Core</span></p> 
+</td>
+<td       colspan=2       width=298       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2   width=136   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(5 hours)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2   width=136   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=3  width=455 height=20 valign=bottom><p><span class=rvts30>Area G -
+Major Requirements</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(39 hours)</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 2111</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Linear
+Algebra</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 3101</span></p>
+</td>
+<td       colspan=4       width=496       height=20       valign=bottom><p><span
+class=rvts31>Introduction to Number Theory</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 3211</span></p>
+</td>
+<td  colspan=4  width=496 height=20 valign=bottom><p><span class=rvts31>Ordinary
+Differential Equations</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 3213</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Modern
+Geometry</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 3314</span></p>
+</td>
+<td   colspan=2  width=346  height=20  valign=bottom><p><span  class=rvts31>Math
+Statistics</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 3411</span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31>Statistical Methods</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4111</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Modern
+Algebra I</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4112</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Modern
+Algebra II</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4211</span></p>
+</td>
+<td  colspan=2  width=346 height=20 valign=bottom><p><span class=rvts31>Elem. of
+Analysis I</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4212</span></p>
+</td>
+<td  colspan=2  width=346 height=20 valign=bottom><p><span class=rvts31>Elem. of
+Analysis II</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4215</span></p>
+</td>
+<td  colspan=2 width=346 height=20 valign=bottom><p><span class=rvts31>Numerical
+Analysis</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4921</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Senior
+Project I</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>MATH 4922</span></p>
+</td>
+<td  colspan=2  width=346  height=20  valign=bottom><p><span class=rvts31>Senior
+Project II</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31>FREN 1102</span></p>
+</td>
+<td  colspan=4  width=496  height=20  valign=bottom><p><span  class=rvts31>Elem.
+Fren or GRMN 1121, Elem. German</span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td        colspan=2       width=94       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td     width=95     height=20     valign=bottom><p><span     class=rvts30>Major
+Electives</span></p> 
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts30><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(6 hours)</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=3 width=455 height=20 valign=bottom><p><span class=rvts31>Six hours
+from the Mathematics Courses 3000 or above</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td        colspan=2       width=94       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td        colspan=2       width=94       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=3  width=455  height=20 valign=bottom><p><span class=rvts30>General
+Electives</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts30><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(15 hours)</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td   colspan=3   width=455  height=20  valign=bottom><p><span  class=rvts31>Any
+course from the college curriculum.</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td        colspan=2       width=94       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td width=95 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       colspan=2       width=346       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td        colspan=2       width=94       height=20       valign=bottom><p><span
+class=rvts31><br></span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=3  width=455  height=20  valign=bottom><p><span  class=rvts30>Total
+Required for Graduation</span></p> 
+</td>
+<td       colspan=2       width=136       height=20       valign=bottom><p><span
+class=rvts30><br></span></p> 
+</td>
+<td    colspan=2    width=94   height=20   valign=bottom><p   class=rvps28><span
+class=rvts30>(125 hours)</span></p> 
+</td>
+<td><br>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps54><span class=rvts76><br></span></p>
+<p class=rvps55><span class=rvts77><br></span></p>
+<p class=rvps56><span class=rvts78><br></span></p>
+<p class=rvps57><span class=rvts79><br></span></p>
+<p class=rvps58><span class=rvts80><br></span></p>
+<p class=rvps59><span class=rvts81><br></span></p>
+<h2 class=rvps60><a name="_Toc303538622"></a>
+<span   class=rvts0><span   class=rvts82>P</span></span><span  class=rvts0><span
+class=rvts83>ROGRA</span></span><span class=rvts0><span
+class=rvts33>M</span></span><span         class=rvts0><span        class=rvts84>
+</span></span><span      class=rvts0><span     class=rvts85>O</span></span><span
+class=rvts0><span       class=rvts33>F</span></span><span      class=rvts0><span
+class=rvts86>                </span></span><span               class=rvts0><span
+class=rvts87>S</span></span><span class=rvts0><span
+class=rvts88>TUD</span></span><span class=rvts0><span
+class=rvts33>Y</span></span><span         class=rvts0><span        class=rvts89>
+</span></span><span     class=rvts0><span     class=rvts90>FO</span></span><span
+class=rvts0><span       class=rvts33>R</span></span><span      class=rvts0><span
+class=rvts91>                </span></span><span               class=rvts0><span
+class=rvts92>TH</span></span><span class=rvts0><span
+class=rvts33>E</span></span><span         class=rvts0><span        class=rvts93>
+</span></span><span      class=rvts0><span     class=rvts94>B</span></span><span
+class=rvts0><span    class=rvts95>ACHELO</span></span><span    class=rvts0><span
+class=rvts33>R</span></span><span         class=rvts0><span        class=rvts96>
+</span></span><span      class=rvts0><span     class=rvts97>O</span></span><span
+class=rvts0><span       class=rvts33>F</span></span><span      class=rvts0><span
+class=rvts98>                </span></span><span               class=rvts0><span
+class=rvts99>A</span></span><span class=rvts0><span
+class=rvts100>R</span></span><span class=rvts0><span
+class=rvts101>T</span></span><span class=rvts0><span
+class=rvts33>S</span></span><span        class=rvts0><span        class=rvts102>
+</span></span><span     class=rvts0><span     class=rvts103>D</span></span><span
+class=rvts0><span     class=rvts104>EGRE</span></span><span    class=rvts0><span
+class=rvts33>E</span></span><span        class=rvts0><span        class=rvts105>
+</span></span><span     class=rvts0><span     class=rvts106>I</span></span><span
+class=rvts0><span       class=rvts33>N</span></span><span      class=rvts0><span
+class=rvts107>               </span></span><span               class=rvts0><span
+class=rvts108>M</span></span><span class=rvts0><span
+class=rvts109>A</span></span><span class=rvts0><span
+class=rvts110>THEM</span></span><span class=rvts0><span
+class=rvts111>A</span></span><span class=rvts0><span
+class=rvts112>TICS</span></span></h2> 
+<p class=rvps35><span class=rvts31>125 Semester Hours</span></p>
+<div   class=rvps29><table   width=731   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td   width=101   height=20  valign=bottom><p><span  class=rvts30>Freshman  Year
+</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30>Fall </span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts30>Spring</span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>ENGL
+1101</span></p> 
+</td>
+<td   width=184   height=20  valign=bottom><p><span  class=rvts31>English  Comp.
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>ENGL
+1102</span></p> 
+</td>
+<td   width=160   height=20  valign=bottom><p><span  class=rvts31>English  Comp.
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+1113</span></p> 
+</td>
+<td             width=184            height=20            valign=bottom><p><span
+class=rvts31>Precalculus</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+1211</span></p> 
+</td>
+<td    width=160    height=20    valign=bottom><p><span    class=rvts31>Calculus
+1</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>COMM
+1100</span></p> 
+</td>
+<td  width=184  height=20  valign=bottom><p><span  class=rvts31>Fund.  of Public
+Speaking</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31>Elective</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>CHEM
+1211K</span></p> 
+</td>
+<td  width=184 height=20 valign=bottom><p><span class=rvts31>General Chemistry I
+or</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>CHEM
+1212K</span></p> 
+</td>
+<td  width=160  height=20  valign=bottom><p><span class=rvts31>General Chemistry
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31>ASU 1201</span></p>
+</td>
+<td  width=184  height=20  valign=bottom><p><span class=rvts31>Found. of College
+Success</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>POLS
+1101</span></p> 
+</td>
+<td   width=160  height=20  valign=bottom><p><span  class=rvts31>U.S.  &amp;  GA
+Gov.</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span    class=rvts30>Total
+Hours</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=299 height=20 valign=bottom><p><span class=rvts30>Sophomore
+Year</span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>ENGL
+2111</span></p> 
+</td>
+<td   width=184   height=20   valign=bottom><p><span   class=rvts31>World   Lit.
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+2213</span></p> 
+</td>
+<td    width=160    height=20    valign=bottom><p><span    class=rvts31>Calculus
+III</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+2212</span></p> 
+</td>
+<td    width=184    height=20    valign=bottom><p><span    class=rvts31>Calculus
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>4</span></p> 
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31>Elective</span></p>
+</td>
+<td   width=160  height=20  valign=bottom><p><span  class=rvts31>Hum./Fine  Arts
+</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=299  height=20  valign=bottom><p><span class=rvts31>Social
+Science Elective</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+2111</span></p> 
+</td>
+<td     width=160     height=20    valign=bottom><p><span    class=rvts31>Linear
+Algebra</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+2411</span></p> 
+</td>
+<td     width=184     height=20     valign=bottom><p><span    class=rvts31>Basic
+Statistics</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  colspan=2  width=276  height=20  valign=bottom><p><span class=rvts31>Social
+Science Elective</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101    height=20    valign=bottom><p><span    class=rvts31>General
+Elective</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31>Elective</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>HIST
+1002</span></p> 
+</td>
+<td  width=160  height=20  valign=bottom><p><span  class=rvts31>Intro.  to  Afr.
+Diasp.</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span    class=rvts30>Total
+Hours</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td       width=102      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=102      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20    valign=bottom><p><span    class=rvts30>Junior
+Year</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td       width=160      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+3213</span></p> 
+</td>
+<td     width=184     height=20    valign=bottom><p><span    class=rvts31>Modern
+Geometry</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts30>MATH
+4112</span></p> 
+</td>
+<td   width=160  height=20  valign=bottom><p><span  class=rvts31>Modern  Algebra
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts30>MATH
+3211</span></p> 
+</td>
+<td   width=184  height=20  valign=bottom><p><span  class=rvts31>Ordinary  Diff.
+Equa.</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts30>MATH
+3101</span></p> 
+</td>
+<td  width=160  height=20  valign=bottom><p><span  class=rvts31>Intro  to Number
+Theory</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+4111</span></p> 
+</td>
+<td   width=184  height=20  valign=bottom><p><span  class=rvts31>Modern  Algebra
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  width=102  height=20  valign=bottom><p class=rvps28><span class=rvts31>FREN
+or GRMN II</span></p> 
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101    height=20    valign=bottom><p><span    class=rvts31>General
+Elective</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+3314</span></p> 
+</td>
+<td  width=160  height=20  valign=bottom><p><span  class=rvts31>Math  Statistics
+</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2 width=299 height=20 valign=bottom><p><span class=rvts31>FREN 1101
+OR GRMN 1121</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td  colspan=2  width=276  height=20  valign=bottom><p><span class=rvts31>Social
+Science Elective</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31>PEDH</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31>Activity</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=160      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span    class=rvts30>Total
+Hours</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td       width=102      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td       width=160      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(15 hrs)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=102      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td       width=160      height=20      valign=bottom><p      class=rvps28><span
+class=rvts30><br></span></p> 
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20    valign=bottom><p><span    class=rvts30>Senior
+Year</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td       width=102      height=20      valign=bottom><p      class=rvps28><span
+class=rvts31><br></span></p> 
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+4211</span></p> 
+</td>
+<td   width=184   height=20   valign=bottom><p><span   class=rvts31>Elements  of
+Analysis I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+4212</span></p> 
+</td>
+<td   width=160   height=20   valign=bottom><p><span   class=rvts30>Elements  of
+Analysis II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts30>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31>MATH</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31>Elective</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts30>MATH
+4215</span></p> 
+</td>
+<td     width=160    height=20    valign=bottom><p><span    class=rvts30>Numeric
+Analysis</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31>MATH</span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31>Elective</span></p>
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+4922</span></p> 
+</td>
+<td   width=160  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+II</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>2</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  colspan=2  width=299  height=20 valign=bottom><p><span class=rvts31>General
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>6</span></p> 
+</td>
+<td     width=102     height=20     valign=bottom><p><span     class=rvts31>MATH
+3411</span></p> 
+</td>
+<td    width=160   height=20   valign=bottom><p><span   class=rvts31>Statistical
+Methods</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span     class=rvts31>MATH
+4921</span></p> 
+</td>
+<td   width=184  height=20  valign=bottom><p><span  class=rvts31>Senior  Project
+I</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>1</span></p> 
+</td>
+<td  colspan=2  width=276  height=20 valign=bottom><p><span class=rvts31>General
+Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td width=101 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts31><br></span></p>
+</td>
+<td     width=102     height=20    valign=bottom><p><span    class=rvts31>Social
+Science</span></p> 
+</td>
+<td             width=160            height=20            valign=bottom><p><span
+class=rvts31>Electives</span></p> 
+</td>
+<td       width=50       height=20      valign=bottom><p      class=rvps28><span
+class=rvts31>3</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td     width=101     height=20     valign=bottom><p><span    class=rvts30>Total
+Hours</span></p> 
+</td>
+<td width=184 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(16 hrs)</span></p>
+</td>
+<td width=102 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=160 height=20 valign=bottom><p><span class=rvts30><br></span></p>
+</td>
+<td width=50 height=20 valign=bottom><p><span class=rvts30>(17 hrs)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps61><span class=rvts113><br></span></p>
+</body></html>

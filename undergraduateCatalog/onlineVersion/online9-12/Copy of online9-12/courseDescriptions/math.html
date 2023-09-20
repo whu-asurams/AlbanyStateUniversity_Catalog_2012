@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>math</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 16pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 13pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+ color: #000000;
+}
+span.rvts11
+{
+ font-size: 6pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ vertical-align: super;
+}
+span.rvts12
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 4px 0px 6px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 5px 0px 6px;
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 5px 0px 6px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps7
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps8
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps9
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps10
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps11
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps12
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps13
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps14
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps15
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps16
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps17
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps18
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps19
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps20
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps21
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps22
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps23
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps24
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps25
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps26
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps27
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps28
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps29
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps30
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps31
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps32
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps33
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps34
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps35
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps36
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps37
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps38
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps39
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps40
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps41
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps42
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps43
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps44
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps45
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps46
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps47
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps48
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps49
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps50
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps51
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps52
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps53
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps54
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps55
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps56
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps57
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps58
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps59
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps60
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps61
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps62
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps63
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps64
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps65
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps66
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps67
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps68
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps69
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps70
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps71
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps72
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps73
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps74
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps75
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps76
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps77
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps78
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps79
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps80
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps81
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps82
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps83
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps84
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps85
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps86
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps87
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps88
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps89
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps90
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps91
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps92
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps93
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps94
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps95
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps96
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps97
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps98
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps99
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps100
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps101
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps102
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps103
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps104
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps105
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps106
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps107
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps108
+{
+ text-align: justify;
+ line-height: 1.03;
+ margin: 1px 4px 0px 6px;
+}
+.rvps109
+{
+}
+.rvps110
+{
+ text-align: justify;
+ margin: 0px 5px 0px 6px;
+}
+.rvps111
+{
+ text-align: justify;
+ margin: 0px 5px 0px 6px;
+}
+.rvps112
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303109261"></a>
+<span   class=rvts0><span   class=rvts6>M</span></span><span   class=rvts0><span
+class=rvts7>ATHEMATICS</span></span></h2> 
+<p class=rvps3><span class=rvts8><br></span></p>
+<p class=rvps4><span class=rvts8><br></span></p>
+<div      class=rvps109><table      border=0     cellpadding=4     cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=335  valign=top><p  class=rvps5><span  class=rvts8>MATH  1101&nbsp; -
+Mathematical     Modeling     .................3.00     Credits     </span><span
+class=rvts9>This  course  is  an  introduction  to  mathematical  modeling using
+graphical,  numerical,  symbolic,  and verbal techniques to describe and explore
+real  world  phenomena.  Emphasis is on the use of elementary functions&nbsp; to
+investigate   and  analyze  applied&nbsp;  problems&nbsp;  and&nbsp;  questions,
+supported   by   appropriate   technology   and   effective  communication&nbsp;
+of&nbsp;&nbsp; quantitative concepts and results.</span></p> 
+<p class=rvps6><span class=rvts9><br></span></p>
+<p    class=rvps7><span    class=rvts8>MATH   1111&nbsp;   -   College   Algebra
+...............................3.00    Credits   </span><span   class=rvts9>This
+course  includes  a  study  of  topics  in  real  numbers,  linear and quadratic
+equations,  complex  numbers, various types of other functions and their graphs,
+exponential  and  logarithmic  functions,  systems&nbsp; of linear equations and
+inequalities.</span></p> 
+<p  class=rvps8><span  class=rvts10>Prerequisite:  Developmental  MATH  0099  or
+Placement Test.</span></p> 
+<p class=rvps9><span class=rvts9><br></span></p>
+<p   class=rvps10><span   class=rvts8>MATH   1113&nbsp;   -   Pre-calculus  with
+Trig......................3.00  Credits  </span><span class=rvts9>This course is
+the  study  of  functions  and  their  graphs.&nbsp;&nbsp;  Topics&nbsp; include
+trigonometric&nbsp;       functions,&nbsp;      exponential&nbsp;      and&nbsp;
+logarithmic&nbsp;  functions,  transcendental  functions  and polar coordinates.
+</span></p> 
+<p   class=rvps11><span   class=rvts10>Prerequisite:   MATH  1111  or  Placement
+Test.</span></p> 
+<p class=rvps12><span class=rvts9><br></span></p>
+<p   class=rvps13><span   class=rvts8>MATH   1201&nbsp;  -  Survey  of  Calculus
+.........................3.00   Credits   </span><span  class=rvts9>This  course
+includes   a   study   of   topics&nbsp;   in&nbsp;   limits,&nbsp;  continuity,
+differentiation&nbsp;     of&nbsp;    elementary&nbsp;    functions,&nbsp;&nbsp;
+applications     of     the    derivative,    the    definite    integral    and
+applications.</span></p> 
+<p class=rvps14><span class=rvts10>Prerequisites:&nbsp; MATH 1111.</span></p>
+<p class=rvps15><span class=rvts9><br></span></p>
+<p    class=rvps16><span    class=rvts8>MATH    1211&nbsp;    -    Calculus    I
+........................................4.00         Credits        </span><span
+class=rvts9>This   is   a   beginning   course   in   calculus.  Topics  include
+differentiation   and&nbsp;   integration&nbsp;  of&nbsp;  algebraic&nbsp;&nbsp;
+and&nbsp;&nbsp;   trigonometric&nbsp;&nbsp;   functions,  with  applications  to
+graphs&nbsp;  of&nbsp;  functions,&nbsp;  rectilinear&nbsp; motion,&nbsp; maxima
+and minima, areas, volumes and work.</span></p> 
+<p class=rvps17><span class=rvts10>Prerequisite: MATH 1113&nbsp; </span></p>
+<p   class=rvps18><span   class=rvts8>MATH   1311&nbsp;   -   Informal  Geometry
+........................3.00 Credits</span></p> 
+<p   class=rvps19><span   class=rvts9>A   study   of   the  basic  theorems  and
+constructions   in  plane  Euclidean  geometry  and  an  introduction  to  space
+geometry,   central   angles,  tangents,  inscribed&nbsp;&nbsp;  and&nbsp;&nbsp;
+circumscribed&nbsp;&nbsp;   circles,&nbsp;&nbsp;   polyhedrons&nbsp;&nbsp;   and
+polygons.</span></p> 
+<p class=rvps20><span class=rvts10>Prerequisite: MATH 1111.</span></p>
+<p class=rvps21><span class=rvts9><br></span></p>
+<p class=rvps22><span class=rvts8>MATH 2008 - Foundations of Numbers</span></p>
+<p            class=rvps23><span            class=rvts8>and           Operations
+.......................................................3.00 Credits
+</span><span  class=rvts9>This  course  is  an  Area  F introductory mathematics
+course  for  early  childhood education majors.&nbsp; This course will emphasize
+the  under-  standing and use of the major concepts of number and operations. As
+a  general  theme,  strategies  of problem solving will be used and discussed in
+the context of various topics.</span></p> 
+<p   class=rvps24><span   class=rvts10>Prerequisite(s):&nbsp;&nbsp;&nbsp;   Math
+1101, Math 1111, or Math 1113.</span></p> 
+<p class=rvps25><span class=rvts9><br></span></p>
+<p    class=rvps26><span    class=rvts8>MATH   2111&nbsp;   -   Linear   Algebra
+...............................3.00 Credits</span></p> 
+<p  class=rvps27><span  class=rvts9>This  course concentrates on operations with
+vectors,  matrices,  systems  of  linear  equations,  determinants, vector&nbsp;
+spaces,      linear&nbsp;      trans-      formations,      eigenvalues      and
+eigenvectors.</span></p> 
+<p class=rvps28><span class=rvts10>Prerequisite: MATH 1211.</span></p>
+<p class=rvps29><span class=rvts9><br></span></p>
+<p     class=rvps30><span     class=rvts8>MATH     2212&nbsp;     -     Calculus
+II.......................................4.00        Credits        </span><span
+class=rvts9>This   course   is   a   continuation   of&nbsp;  Calculus&nbsp;  I.
+Topics&nbsp;  include  differentiation  and  integration of transcendental&nbsp;
+functions,&nbsp;  techniques of&nbsp; integration,&nbsp; arc&nbsp; length,&nbsp;
+surface&nbsp;  or  volumes,&nbsp;  force,&nbsp;  work,&nbsp; and introduction to
+differential  equations, improper integrals, sequences and series and parametric
+equations.</span></p> 
+<p class=rvps31><span class=rvts10>Prerequisite: MATH 1211&nbsp; .</span></p>
+<p class=rvps32><span class=rvts9><br></span></p>
+<p    class=rvps33><span    class=rvts8>MATH    2213&nbsp;    -   Calculus   III
+.....................................4.00          Credits          </span><span
+class=rvts9>Topics  include  vectors,  the  calculus of vector-valued functions,
+polar  coordinates,  spherical coordinates, function of several&nbsp; variables,
+directional   derivatives,   Lagrange   multipliers   and   multiple  integrals.
+</span></p> 
+<p class=rvps34><span class=rvts10>Prerequisite: MATH 2212&nbsp; .</span></p>
+<p class=rvps35><span class=rvts9><br></span></p>
+<p   class=rvps36><span   class=rvts8>MATH   2411&nbsp;   -   Basic   Statistics
+................................3.00   Credits   </span><span   class=rvts9>This
+course  will  include  an  introduction  to  probability  and  basic concepts of
+descriptive  and  inferential  statistics.&nbsp; The computer and graphing&nbsp;
+calculators&nbsp;  will&nbsp;  be&nbsp; an&nbsp; integral&nbsp; part&nbsp;&nbsp;
+of&nbsp;&nbsp; this course. </span></p> 
+<p    class=rvps37><span    class=rvts10>Prerequisite:   MATH   1111   or   MATH
+1113.</span></p> 
+<p class=rvps38><span class=rvts9><br></span></p>
+<p   class=rvps39><span   class=rvts8>MATH   3000&nbsp;   -  Numbers  and  Their
+Applications..3.00  Credits  </span><span class=rvts9>This course will cover the
+basic  properties&nbsp;  of&nbsp;  the&nbsp; system&nbsp; of&nbsp; natural&nbsp;
+numbers,  the  system  of  whole numbers, the system of rational numbers and the
+system   of   real  numbers.  This  course  will  also  cover  nomenclature  and
+representations   of   numbers,   number   patterns,   elements&nbsp;   of&nbsp;
+number&nbsp; theory and applications.</span></p> 
+<p    class=rvps40><span    class=rvts10>Prerequisite:   MATH   1111   or   MATH
+1113.</span></p> 
+<p class=rvps41><span class=rvts9><br></span></p>
+<p class=rvps42><span class=rvts8>MATH 3001&nbsp; - Math Concepts</span></p>
+<p                      class=rvps43><span                     class=rvts8>using
+Technology......................................................3.00 Credits
+</span><span  class=rvts9>This  course  explores  the  technical  tools to study
+concepts   in   Geometry,   Algebra   and  Calculus.&nbsp;&nbsp;  Software&nbsp;
+such&nbsp;    as&nbsp;   Geometric&nbsp;   Pad,   Maple&nbsp;   V,   Interactive
+Pre-calculus  and  Language  Proofs  and Logic will&nbsp; be&nbsp; used&nbsp; to
+explore  pre-calculus  and&nbsp;  calculus&nbsp;  concepts&nbsp; and their&nbsp;
+applications&nbsp;     in     problem     solving.&nbsp;&nbsp;    Graphing&nbsp;
+calculators&nbsp;  will be used to demonstrate concepts in mathematics and to do
+problem solving.</span></p> 
+<p class=rvps44><span class=rvts10>Prerequisite:&nbsp; MATH 1113.</span></p>
+<p class=rvps45><span class=rvts9><br></span></p>
+<p  class=rvps46><span  class=rvts8>MATH  3101&nbsp;  -  Introduction  to Number
+Theory    ...3.00   Credits   </span><span   class=rvts9>Introduction   to   the
+classical&nbsp;  arithmetic&nbsp;  properties&nbsp; of&nbsp; the&nbsp; integers.
+Divisibility   properties,   primes   and   their   distribution,  congruencies,
+Diophantine  equations and their applications, number-theoretic functions,&nbsp;
+Fermat&nbsp;  and&nbsp;  Euler&nbsp;  theorems,  continued  fractions, Fibonacci
+numbers, Pythagorean triples and perfect numbers.</span></p> 
+<p class=rvps47><span class=rvts10>Prerequisite: MATH 2212&nbsp; </span></p>
+<p class=rvps48><span class=rvts9><br></span></p>
+<p     class=rvps49><span     class=rvts8>MATH     3111&nbsp;     -     Discrete
+Structures.........................3.00  Credits  </span><span  class=rvts9>This
+course    includes    topics    such&nbsp;   as&nbsp;   logic,&nbsp;   set&nbsp;
+relations,&nbsp;    functions,    counting&nbsp;&nbsp;   techniques,&nbsp;&nbsp;
+mathematical&nbsp;&nbsp;  induction,&nbsp;&nbsp;  representations, combinatorial
+problems,  elementary  graph  theory,  network  flow, recursion and finite state
+machine.</span></p> 
+<p class=rvps50><span class=rvts10>Prerequisite: MATH 1113.</span></p>
+<p class=rvps51><span class=rvts9><br></span></p>
+<p     class=rvps52><span     class=rvts8>MATH     3112&nbsp;     -     Discrete
+Mathematics.....................3.00   Credits   </span><span   class=rvts9>This
+course  includes  a  study  of  topics  in combinatorial mathematical processes.
+Topics  in  mathematical  induction,  set  theory,  number theory, combinations,
+permutations,    probability   theory   including   the   induction   principle,
+relations,&nbsp;    recursions,&nbsp;    the&nbsp;   counting&nbsp;   principle,
+generating functions, logic, and graph theory are covered. </span></p> 
+<p class=rvps53><span class=rvts10>Prerequisite: MATH 1113.</span></p>
+<p class=rvps54><span class=rvts9><br></span></p>
+<p   class=rvps55><span  class=rvts8>MATH  3211&nbsp;  -  Ordinary  Differential
+</span></p> 
+<p class=rvps56><span
+class=rvts8>Equations……………………………………….......3.00
+Credits</span></p> 
+<p  class=rvps57><span  class=rvts9>This  course  includes  topics  in  ordinary
+differential  equations:  separable  equations,  homogeneous and non homogeneous
+equations,   exact&nbsp;   equations,  Euler  equations,  non-  linear  ordinary
+differential  equations,&nbsp;  the&nbsp; study of Laplace transforms and how to
+use  them to solve practical problems&nbsp; as well as solving systems of linear
+differential equations.</span></p> 
+<p class=rvps58><span class=rvts10>Prerequisite: MATH 2212.</span></p>
+</td>
+<td  width=340  valign=top><p  class=rvps59><span  class=rvts8>MATH 3213&nbsp; -
+Modern      Geometry..........................3.00      Credits     </span><span
+class=rvts9>This  course  is  the  study  of metric, affine and projective&nbsp;
+geometries  by  means  of  groups of transformations and their invariants on the
+Euclidean plan.</span></p> 
+<p class=rvps60><span class=rvts10>Prerequisite: MATH 2111&nbsp; .</span></p>
+<p class=rvps61><span class=rvts9><br></span></p>
+<p    class=rvps62><span   class=rvts8>MATH   3314&nbsp;   -   Math   Statistics
+................................3.00             Credits            </span><span
+class=rvts9>Calculus-based  course  in probability and statistics covering&nbsp;
+probability    distributions,    probability    densities,&nbsp;    random&nbsp;
+variables,&nbsp;  sampling, experimental design and nonparametric statistics and
+decision theory.</span></p> 
+<p class=rvps63><span class=rvts10>Prerequisite: MATH 2212.</span></p>
+<p class=rvps64><span class=rvts9><br></span></p>
+<p   class=rvps65><span   class=rvts8>MATH   3411&nbsp;  -  Statistical  Methods
+.........................3.00   Credits   </span><span  class=rvts9>This  course
+deals  basic  statistical  methods  encountered  in&nbsp;  applications.  Topics
+covered  include  normal&nbsp;  distribution,&nbsp;  confidence&nbsp;  interval,
+statistical   inferences,   hypothesis   testing,   regression&nbsp;&nbsp;   and
+correlation,   categorical&nbsp;   data&nbsp;   and&nbsp;   non-parametric&nbsp;
+methods,&nbsp;  analysis  of  variance.  Statistical  methods  will  be  a major
+requirement  for the&nbsp; mathematics program.&nbsp; It supports our efforts to
+strengthen&nbsp;  our  program and offer more Applied Mathematics courses to our
+majors  who  are  seeking employment in areas requiring the use of statistics as
+well   as   those   majors   who   intend   to   pursue   graduate  programs  in
+statistics.</span></p> 
+<p class=rvps66><span class=rvts10>Prerequisite: Math 2411</span></p>
+<p class=rvps67><span class=rvts10><br></span></p>
+<p    class=rvps68><span   class=rvts8>MATH   3413&nbsp;   -   Introduction   to
+Combinatorics     .....3.00    Credits    </span><span    class=rvts9>This&nbsp;
+course&nbsp;  is&nbsp;  the&nbsp;  study&nbsp;  of&nbsp; basic&nbsp; graph&nbsp;
+theory,&nbsp;      permutations,     combinations,     inclusion-exclusion&nbsp;
+principle,&nbsp;     recurrence&nbsp;     relations,    generation    functions,
+occupancy&nbsp;  problems,&nbsp; applications&nbsp; to&nbsp; probability theory,
+geometry  of the plane, maps on&nbsp; the&nbsp; sphere,&nbsp; coloring problems,
+finite&nbsp;   structures,&nbsp;   systems&nbsp;  of&nbsp;  distinct&nbsp;&nbsp;
+representatives,     existence    problems,    magic    squares,    and    Latin
+squares.</span></p> 
+<p class=rvps69><span class=rvts10>Prerequisite: MATH 2111.</span></p>
+<p class=rvps70><span class=rvts9><br></span></p>
+<p   class=rvps71><span   class=rvts8>MATH  3423&nbsp;  -  Intro  to  Operations
+Research........3.00  Credits  </span><span class=rvts9>This course is the study
+of  deterministic and stochastic models including transportation&nbsp; and&nbsp;
+assignment&nbsp;  problems,&nbsp;  network&nbsp;  analysis,&nbsp;&nbsp; decision
+theory, queuing theory and simulation.</span></p> 
+<p class=rvps72><span class=rvts10>Prerequisite: MATH 2111.</span></p>
+<p class=rvps73><span class=rvts9><br></span></p>
+<p    class=rvps74><span    class=rvts8>MATH   4111&nbsp;   -   Modern   Algebra
+I...........................3.00  Credits  </span><span  class=rvts9>This course
+covers  basic  concepts  in&nbsp;  groups,&nbsp; rings,&nbsp; integral&nbsp; do-
+mains,     homeomorphisms&nbsp;     and&nbsp;     isomorphism&nbsp;     of&nbsp;
+groups.</span></p> 
+<p    class=rvps75><span    class=rvts10>Prerequisite:&nbsp;    MATH&nbsp;&nbsp;
+2212&nbsp; </span></p> 
+<p class=rvps76><span class=rvts9><br></span></p>
+<p   class=rvps77><span   class=rvts8>MATH   4112&nbsp;   -  Modern  Algebra  II
+.........................3.00   Credits   </span><span  class=rvts9>This  course
+covers  elementary  concepts  in  ring  theory  and  field  theory. </span><span
+class=rvts10>Prerequisite: MATH 4111.</span></p> 
+<p class=rvps78><span class=rvts9><br></span></p>
+<p   class=rvps79><span  class=rvts8>MATH  4211&nbsp;  -  Elements  of  Analysis
+I....................3.00  Credits  </span><span  class=rvts9>This course is the
+study  of the real number system, point- set theory of the real line, global and
+local  properties  of  continuous&nbsp;  functions,  Law of Mean, convergence of
+sequences and series, and the Theory of&nbsp; Riemann Integration.</span></p> 
+<p class=rvps80><span class=rvts10>Prerequisite: MATH 2213.</span></p>
+<p class=rvps81><span class=rvts9><br></span></p>
+<p  class=rvps82><span  class=rvts8>MATH  4212&nbsp;  -  Elements of Analysis II
+..................3.00  Credits  </span><span  class=rvts9>This  course  is  the
+study&nbsp;   of&nbsp;   functions&nbsp;   of&nbsp;   several&nbsp;   variables,
+implicit-function  theorems,  vectors  in </span><span class=rvts8>R</span><span
+class=rvts11>n</span><span  class=rvts9>, linear transformations in </span><span
+class=rvts8>R</span><span        class=rvts11>n</span><span        class=rvts9>,
+calculus&nbsp;  of&nbsp; functions&nbsp; in&nbsp; higher&nbsp; dimensional&nbsp;
+Euclidean&nbsp;     spaces,     multiple    integrals,    line    and    surface
+integrals.</span></p> 
+<p class=rvps83><span class=rvts10>Prerequisite: MATH 4211.</span></p>
+<p class=rvps84><span class=rvts9><br></span></p>
+<p   class=rvps85><span   class=rvts8>MATH   4214&nbsp;   -   Intro  to  Complex
+Variables...........3.00 Credits</span></p> 
+<p  class=rvps86><span  class=rvts9>The  course  includes  a  study of analytic,
+harmonic,    continuous,   and   logarithmic   functions,   Cauchy-Riemann&nbsp;
+equations,&nbsp;  power&nbsp;  series,  branch point,&nbsp; contours&nbsp;&nbsp;
+and&nbsp;&nbsp;  contour&nbsp;&nbsp; integrals,&nbsp;&nbsp; Cauchy's&nbsp;&nbsp;
+theorem,&nbsp; and applications.</span></p> 
+<p class=rvps87><span class=rvts10>Prerequisite: MATH 2213&nbsp; </span></p>
+<p class=rvps88><span class=rvts9><br></span></p>
+<p   class=rvps89><span   class=rvts8>MATH   4215&nbsp;   -  Numerical  Analysis
+........................3.00  Credits  </span><span class=rvts9>This course will
+provide  an  introductory  knowledge of&nbsp; elementary numerical methods found
+useful  in the field of computing.&nbsp; This will include number representation
+and   errors,   locating&nbsp;   roots&nbsp;  of  equations,  interpolation  and
+numerical  differentiation, numerical integration, minimization and maximization
+multivariate functions. </span></p> 
+<p class=rvps90><span class=rvts10>Prerequisite: MATH 2213&nbsp; </span></p>
+<p class=rvps91><span class=rvts9><br></span></p>
+<p   class=rvps92><span   class=rvts8>MATH  4220&nbsp;  -  Partial  Differential
+Equations  .......3.00  Credits  </span><span class=rvts9>This course deals with
+method  of  characteristics&nbsp;  for&nbsp;  first&nbsp; and&nbsp; second order
+partial    differential   equations,   separation   of   variables,   hyperbolic
+equations,&nbsp;       parabolic&nbsp;      equations,&nbsp;      elliptic&nbsp;
+equations,&nbsp;  Fourier  series, Green's function. This course strengthens the
+applied math courses offerings in the mathematics program.</span></p> 
+<p class=rvps93><span class=rvts10>Prerequisite: MATH 3211.</span></p>
+<p class=rvps94><span class=rvts9><br></span></p>
+<p     class=rvps95><span     class=rvts8>MATH     4313&nbsp;     -     Topology
+.........................................3.00        Credits        </span><span
+class=rvts9>This  course  is  the study of elementary topology.&nbsp; The topics
+include      point&nbsp;      set&nbsp;      theory,&nbsp;     topological&nbsp;
+spaces,&nbsp;&nbsp;     metric&nbsp;&nbsp;     spaces,&nbsp;&nbsp;    subspaces,
+continuous&nbsp;   mapping,&nbsp;   homeomorphisms,&nbsp;   connectedness,&nbsp;
+compactness,&nbsp;&nbsp; and intuitive concepts in topology.</span></p> 
+<p      class=rvps96><span      class=rvts10>Prerequisite:&nbsp;      MATH&nbsp;
+4211&nbsp;&nbsp; </span></p> 
+<p class=rvps97><span class=rvts9><br></span></p>
+<p  class=rvps98><span  class=rvts8>MATH  4511&nbsp;  -  History  of Mathematics
+.................3.00 Credits</span></p> 
+<p   class=rvps99><span   class=rvts8>   </span><span   class=rvts9>This  course
+includes  topics  in numeral systems, Babylonian&nbsp; and Egyptian mathematics,
+Pythagorean   and   Euclidean   mathematics,   Hindu&nbsp;   and&nbsp;   Arabian
+mathematics,  European  mathematics  from the Dark Ages&nbsp; to&nbsp; the&nbsp;
+Present.</span></p> 
+<p class=rvps100><span class=rvts10>Prerequisite: Senior standing.</span></p>
+<p class=rvps101><span class=rvts9><br></span></p>
+<p   class=rvps102><span   class=rvts8>MATH   4921&nbsp;   -  Senior  Project  I
+…………………&nbsp; 1.00 Credits</span></p> 
+<p  class=rvps103><span  class=rvts9>In this course, students will broaden their
+educational  experience by reading and understanding technical literature in the
+areas   of   mathematics   and   computer  science,  organizing  and  writing  a
+professional-level    proposal,    attending    seminars    and    preparing   a
+professional-level   presentation.   Students  will  draw  upon  and  synthesize
+knowledge  from their previous course work. Though revision of both the proposal
+and  the  oral  presentation, students will improve their ability to communicate
+the main ideas.</span></p> 
+<p class=rvps104><span class=rvts10>Prerequisite: Senior Students</span></p>
+<p class=rvps105><span class=rvts10><br></span></p>
+<p    class=rvps106><span   class=rvts8>MATH   4922&nbsp;   -   Senior   Project
+II&nbsp;&nbsp; ………………….. 2 Credits</span></p> 
+<p  class=rvps107><span  class=rvts9>In this course, students will broaden their
+educational  experience by reading and understanding technical literature in the
+areas   of   mathematics   and   computer  science,  organizing  and  writing  a
+professional-level  paper, project implementation and coding, attending seminars
+and  preparing  a professional-level presentation. Project implementation should
+satisfy  all requirements mentioned in the approved proposal accomplished during
+the  course  CSCI  4921.&nbsp;  Students will draw upon and synthesize knowledge
+from their previous course work and educational experience.</span></p> 
+<p  class=rvps108><span  class=rvts10>Prerequisite:  Senior  Students  and  MATH
+4921</span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps110><span class=rvts8><br></span></p>
+<p class=rvps111><span class=rvts8><br></span></p>
+<p class=rvps112><span class=rvts12><br></span></p>
+</body></html>

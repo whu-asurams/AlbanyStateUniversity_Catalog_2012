@@ -1,0 +1,58 @@
+ 1. There following have more than required
+                Program             (total hours suggested /total required for graduation)
+                ----------------------------------------------------------------------------------
+                1. BA in  Psychology (123/123)
+                2. BA in Sociology n(123/123)
+                3. BA in ENglish (133/122)
+                4. BA in Spanish (125/123)
+                5. BA in Music Education (135/135)
+                6. BA in History (124/124)
+                7. BS in Physical Education - Teacher Education (126/126)
+                8. BS in Nursing (134/127)
+                9. BS in Computer Science (Math Emphasis) (126/126)
+                10. BS in Computer Science (Business Emphasis) (126/126)
+                11. BS in Math (126/125)
+
+                Percentage: 33%
+
+2.  The following have exactly one hour short
+                Program (total hours suggested /total required for graduation)
+                ----------------------------------------------------------------------------------
+                12. BA in Arts (122/123)
+                13. BA in Political Science (123/124)
+                14. BA in Managment (Business Management) (123/124)
+                15. BA in Accounting (123/124)
+                16. BA in Business Information System (123/124)
+                17. BA in Marketing (123/124)
+                18. BA in Logistics (123/124)
+                19. BS in Biology (124/125)
+                20. BS in Chemistry (125/126)
+
+                Percentage: 27%
+
+3. The following do not provide total hours required for graduation
+                Program (total hours suggested /total required for graduation)
+                ----------------------------------------------------------------------------------
+                21. BA in Mass Communication Electronic Media Concentration (119/unkonwn)
+                22. BS in Early Child (128/unknown)
+                23. BS in Middle Grades (128/unknown)
+                24. BS in Special Educaiton (128/unknown)
+                25. BS in Physical Educaiton -recreation (120/unknown)
+                26. BS in Criminal Justice (121/unknown) 
+                27. BS in Forensic Science (126/unknown)
+                28. BS in Science Eduction (124/unknown)
+
+                Percentage: 24%
+
+ 4. The following needs more than one hours, so updates are required.
+                Program (total hours suggested /total required for graduation)
+                ----------------------------------------------------------------------------------
+                29. BA in Music (121/123)
+                30. BA in Speech/Theatre: Speech Concentration (119/123)
+                31. BA in Speech/THeatre: Theatre Concentration (111/123) 
+                32. BA in Social Work (120/123)
+                33. BA in Management (Health Care Management) (120/124)
+ 
+                Percentage: 15%
+
+

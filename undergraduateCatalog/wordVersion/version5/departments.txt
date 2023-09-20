@@ -1,0 +1,63 @@
+Department of Behavior Science
+	Psychology --Fine
+	Sociology --Fine
+Department of English, Mondern Language & Mass Communication
+	English --Fine
+	Spanish --Fine
+	Mass Communication- Print Journalism Concentration-- no program of study
+	Mass Communication- Electronic Media Concentration  119/unkown
+Department of Fine Arts
+	Art, 122/123
+	Music,	121/123
+	Music Education, --- fine
+	Speech & Theatre - Speech Concentration, --- 119/123
+	Speech & Theatre - Theatre Concentration,--- 111/123
+Department of History, Political Science 
+	History --- fine
+	Political Science --- 123/124
+Social Work Program
+	Social Work (BSW) --- 120/123
+	
+
+College of Business
+Department of Business Administration
+	Management (Business Management) --- 123/124
+	Management (Health Care Management) --- 120/124
+	Technology Management 121/123
+Department of Accounting, BUsiness Information System & Marketing
+	Accounting--- 123/124
+	Business Information System --- 123/124
+	Marketing --- 123/124
+	Logistics --- 123/124
+	
+
+College of Education
+Department of Teacher Education
+	Earler Childhood Education ---128/unknown
+	Middle Grades Education --- 128/unknown
+	Special Education --- 128/unknown
+	
+Department of Health, Physical Education & Recreation
+	Health Physical Educaiton (Teaching) --- fine
+	Health Physical Education (non-teaching) --- 120/unknown
+
+
+
+College of Sciences & Health Professions
+Department of Nursing
+	Nursing  --- fine
+Department of Criminal Justice & Forensic Science
+	Criminal Justice --- 121/unknown
+	Forensic Science --- 126/unknown
+
+Department of Natural Sciences
+	Biology  --- 125/126
+	Science Education --- 124/unknown
+	Chemistry --- 125/126
+	
+Department of Math & Computer Science
+ 	Computer Science (Math Emphasis) --- fine
+	Computer Science (Business Emphasis) --- fine
+	Math --- fine
+	
+	

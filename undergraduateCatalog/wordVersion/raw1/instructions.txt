@@ -1,0 +1,21 @@
+Instructions for editing the document:
+
+   0. The general guideline for editing the document is not to use the "Page Layout" entry 
+       of the menu bar, nor to insert page header/footer. 
+
+   1. Each page of the document is one section, which allows it to have different page layout. 
+       Please do not change that setting. Otherwise, wild results may occur.
+
+   2. When editing one page, and the content is short, please leave it as it is.
+
+   3. When editing one page, and the content is more than page, please keep going 
+       with what Word provides and ignore anything on the margin area.
+
+   4. The document tracks editings. In other words, deleted words will still be displayed 
+       but with a strike through mark.  
+
+   5. If space allowed, you can also add one picture.
+
+   6. At the end of the document, there are blank pages attached, which can be used to 
+       add new contents. Or you can just leave them blank.
+   

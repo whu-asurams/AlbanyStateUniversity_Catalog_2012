@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+    var max = 2;
+   function changePicture(){
+        var r=Math.floor(Math.random()*max);
+        var str="banner";
+        if(r<10)
+            str=str+"00"+r+".jpg";
+       else if(r<100)
+            str=str+"0"+r+".jpg";
+       else
+           str=str+r+".jpg";
+        document.getElementById("banner").src=str;
+       return true;
+  }
+</script>
+</head>
+<body style="background-color:#868A08">
+<img src="banner001.jpg" id="banner" onClick="changePicture();" />
+</body>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>returnAid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts7
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts10
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts11
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts12
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts13
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts14
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts15
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts16
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts17
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts18
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts19
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts20
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts21
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts22
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts23
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #548dd4;
+}
+a.rvts24, span.rvts24
+{
+ font-size: 12pt;
+ font-family: 'calibri';
+ color: #548dd4;
+ text-decoration: none;
+}
+span.rvts25
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts26
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts27
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts28
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts29
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts30
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts31
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts32
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts33
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts34
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts35
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: 1px;
+}
+span.rvts36
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts37
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+}
+span.rvts38
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts39
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts40
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts41
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts42
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts43
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts44
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts45
+{
+ font-size: 13pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts46
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #191919;
+ letter-spacing: -1px;
+}
+span.rvts47
+{
+ font-size: 13pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #262626;
+}
+span.rvts48
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #262626;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps3
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps4
+{
+ text-align: justify;
+ text-indent: 36px;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-indent: 36px;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps6
+{
+ text-align: justify;
+ text-indent: 36px;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps7
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps8
+{
+ text-indent: 48px;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 1px 0px;
+ margin: 0px 0px 11px 0px;
+}
+.rvps9
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps10
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps11
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps12
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps13
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps14
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps15
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps16
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps17
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps18
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps19
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps20
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps21
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps22
+{
+ margin: 0px 9px 0px 12px;
+}
+.rvps23
+{
+}
+.rvps24
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps25
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps26
+{
+ text-align: justify;
+ line-height: 1.04;
+ margin: 2px 9px 0px 12px;
+}
+.rvps27
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps28
+{
+ text-align: justify;
+ margin: 0px 9px 0px 12px;
+}
+.rvps29
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps30
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps31
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 9px 0px 12px;
+}
+.rvps32
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps33
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps34
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps35
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps36
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps37
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps38
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps39
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps40
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps41
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps42
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps43
+{
+}
+.rvps44
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps45
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps46
+{
+ text-align: justify;
+ margin: 2px 9px 0px 12px;
+}
+.rvps47
+{
+ text-align: justify;
+ margin: 2px 9px 0px 12px;
+}
+.rvps48
+{
+ text-align: justify;
+ margin: 2px 9px 0px 12px;
+}
+.rvps49
+{
+ text-align: justify;
+ margin: 2px 9px 0px 12px;
+}
+.rvps50
+{
+ text-align: justify;
+ margin: 0px 9px 13px 12px;
+}
+.rvps51
+{
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303369019"></a>
+<span   class=rvts0><span   class=rvts6>R</span></span><span   class=rvts0><span
+class=rvts7>EFUN</span></span><span class=rvts0><span
+class=rvts8>D</span></span><span          class=rvts0><span         class=rvts9>
+</span></span><span      class=rvts0><span     class=rvts10>P</span></span><span
+class=rvts0><span     class=rvts11>OLIC</span></span><span     class=rvts0><span
+class=rvts8>Y</span></span><span         class=rvts0><span         class=rvts12>
+</span></span><span     class=rvts0><span     class=rvts13>FO</span></span><span
+class=rvts0><span       class=rvts8>R</span></span><span       class=rvts0><span
+class=rvts14>                </span></span><span               class=rvts0><span
+class=rvts15>F</span></span><span class=rvts0><span
+class=rvts16>INANCIA</span></span><span class=rvts0><span
+class=rvts8>L</span></span><span         class=rvts0><span         class=rvts17>
+</span></span><span      class=rvts0><span     class=rvts18>A</span></span><span
+class=rvts0><span       class=rvts19>I</span></span><span      class=rvts0><span
+class=rvts8>D</span></span><span         class=rvts0><span         class=rvts20>
+</span></span><span      class=rvts0><span     class=rvts21>R</span></span><span
+class=rvts0><span class=rvts22>ECIPIENTS</span></span></h2> 
+<p class=rvps3><a name="_Toc303366408"></a>
+<span class=rvts23><br></span></p>
+<p   class=rvps4><a   class=rvts24   href="#_Toc303369020">Return  Of  Title  Iv
+Funds</a></p> 
+<p       class=rvps5><a       class=rvts24       href="#_Toc303369021">Repayment
+Obligations</a></p> 
+<p   class=rvps6><a  class=rvts24  href="#_Toc303369022">Procedures  For  </a><a
+class=rvts24   href="#_Toc303369022">Return   Of   Title   Iv   Funds  (R2</a><a
+class=rvts24              href="#_Toc303369022">T</a><a             class=rvts24
+href="#_Toc303369022">4)</a><span class=rvts23> </span></p> 
+<h2 class=rvps7><span class=rvts0><span class=rvts25><br></span></span></h2>
+<p class=rvps8><span class=rvts26><br></span></p>
+<h2 class=rvps9><span class=rvts0><span class=rvts27><br></span></span></h2>
+<h2 class=rvps10><a name="_Toc303369020"></a>
+<span   class=rvts0><span   class=rvts28>R</span></span><span  class=rvts0><span
+class=rvts29>ETUR</span></span><span class=rvts0><span
+class=rvts8>N</span></span><span         class=rvts0><span         class=rvts30>
+</span></span><span      class=rvts0><span     class=rvts31>O</span></span><span
+class=rvts0><span       class=rvts8>F</span></span><span       class=rvts0><span
+class=rvts32>                </span></span><span               class=rvts0><span
+class=rvts33>T</span></span><span class=rvts0><span
+class=rvts34>ITL</span></span><span class=rvts0><span
+class=rvts8>E</span></span><span         class=rvts0><span         class=rvts35>
+</span></span><span      class=rvts0><span     class=rvts36>I</span></span><span
+class=rvts0><span       class=rvts37>V</span></span><span      class=rvts0><span
+class=rvts38>                </span></span><span               class=rvts0><span
+class=rvts39>F</span></span><span class=rvts0><span
+class=rvts40>UNDS</span></span></h2> 
+<p  class=rvps11><span  class=rvts41>As  cited  in  section  484B  of the Higher
+Reauthorization  Act  of 1998 (1965) and section 668.22 of the Federal Register,
+students  who  receive  Title  IV grant or loan funds and withdraw from a school
+after  beginning  attendance,  the  amount  of Title IV grant or loan assistance
+earned  by  the  student  must  be  determined  for the amount of time class was
+attended,  and  if  necessary,  return  the  calculated unearned portion, to the
+Department   of   Education.   You   may   also   be  subject  to  Albany  State
+University</span><span  class=rvts42>’</span><span class=rvts41>s Satisfactory
+Academic Progress guidelines.</span></p> 
+<p     class=rvps12><span     class=rvts43>Title    IV    grants    and    loans
+include:</span></p> 
+<div      class=rvps23><table      border=0      cellpadding=4     cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=351  height=10  valign=top><p class=rvps13><span class=rvts41>1. Pell
+Grant</span></p> 
+</td>
+<td   width=255   height=10   valign=top><p  class=rvps14><span  class=rvts41>6.
+Subsidized Stafford Loan</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   width=351   height=10   valign=top><p  class=rvps15><span  class=rvts41>2.
+Academic Competitiveness Grant</span></p> 
+</td>
+<td   width=255   height=10   valign=top><p  class=rvps16><span  class=rvts41>7.
+Perkins Loan</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   width=351   height=10   valign=top><p  class=rvps17><span  class=rvts41>3.
+National SMART Grant</span></p> 
+</td>
+<td  width=255 height=10 valign=top><p class=rvps18><span class=rvts41>8. Parent
+Plus (Graduate Student)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   width=351   height=10   valign=top><p  class=rvps19><span  class=rvts41>4.
+Supplemental Education Opportunity Grant</span></p> 
+</td>
+<td  width=255 height=10 valign=top><p class=rvps20><span class=rvts41>9. Parent
+Plus Loan (Parent)</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   width=351   height=10   valign=top><p  class=rvps21><span  class=rvts41>5.
+Unsubsidized Stafford Loan</span></p> 
+</td>
+<td       width=255       height=10       valign=top><p       class=rvps22><span
+class=rvts44><br></span></p> 
+</td>
+</tr>
+</table>
+</div>
+<p  class=rvps24><span  class=rvts41>The  Return  of  Title  IV  Funds  (Return)
+regulations  do not dictate an institutional refund policy. Instead, a school is
+required  to determine the earned and unearned Title IV aid a student has earned
+as  of  the  date  the student ceased attendance based on the amount of time the
+student  spent  in  attendance.  The calculation of Title IV funds earned by the
+student      has      no      relations      to      the     student</span><span
+class=rvts42>’</span><span      class=rvts41>s      incurred     institutional
+charges.</span></p> 
+<h2 class=rvps25><span class=rvts0><span class=rvts45><br></span></span></h2>
+<p class=rvps26><span class=rvts46><br></span></p>
+<h2 class=rvps27><a name="_Toc303369021"></a>
+<span   class=rvts0><span   class=rvts47>R</span></span><span  class=rvts0><span
+class=rvts48>EPAYMENT            </span></span><span           class=rvts0><span
+class=rvts47>O</span></span><span class=rvts0><span
+class=rvts48>BLIGATIONS</span></span></h2> 
+<p  class=rvps28><span  class=rvts41>If you do not attend classes, you will have
+to  repay  all  financial  aid funds received. If you do not attend classes, you
+have  not  established  eligibility  for  the  financial  aid  that you received
+therefore all financial aid funds MUST be repaid within 30 days.</span></p> 
+<p  class=rvps29><span  class=rvts41>If  you attend classes, the University will
+calculate   your   repayment   based   on  federal  regulations.  The  repayment
+calculation  is  based  on the time you attended classes for that semester. This
+calculation,  based  on  the  withdrawal date, determines the type and amount of
+financial  aid  you  received. The calculation also identifies the financial aid
+earned  for  the  semester  and the amount the University and you must return to
+the Department of Education.</span></p> 
+<p class=rvps30><span class=rvts41><br></span></p>
+<h2 class=rvps31><a name="_Toc303369022"></a>
+<span   class=rvts0><span   class=rvts47>P</span></span><span  class=rvts0><span
+class=rvts48>ROCEDURES           </span></span><span           class=rvts0><span
+class=rvts47>F</span></span><span        class=rvts0><span       class=rvts48>OR
+</span></span><span      class=rvts0><span     class=rvts47>R</span></span><span
+class=rvts0><span   class=rvts48>ETURN   </span></span><span   class=rvts0><span
+class=rvts47>O</span></span><span        class=rvts0><span        class=rvts48>F
+</span></span><span      class=rvts0><span     class=rvts47>T</span></span><span
+class=rvts0><span    class=rvts48>ITLE   </span></span><span   class=rvts0><span
+class=rvts47>IV</span></span><span        class=rvts0><span        class=rvts48>
+</span></span><span      class=rvts0><span     class=rvts47>F</span></span><span
+class=rvts0><span class=rvts48>UNDS (R2T4)</span></span></h2> 
+<p  class=rvps32><span class=rvts41>If the total amount of Title IV grant and/or
+loan  funds  that  the  student  earned  is less than the amount received by the
+student,  the  difference between these amounts must be returned to the Title IV
+program  (Department  of  Education)  in the following order of priority (not to
+exceed the amount originally disbursed):</span></p> 
+<div      class=rvps43><table      border=0      cellpadding=4     cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=274  valign=top><p  class=rvps33><span  class=rvts41>1.  Unsubsidized
+Stafford Loan </span></p> 
+</td>
+<td    width=329    valign=top><p    class=rvps34><span   class=rvts41>6.   Pell
+Grant</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td   width=274   valign=top><p  class=rvps35><span  class=rvts41>2.  Subsidized
+Stafford Loan </span></p> 
+</td>
+<td   width=329   valign=top><p   class=rvps36><span   class=rvts41>7.  Academic
+Competitiveness Grant</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=274  valign=top><p  class=rvps37><span  class=rvts41>3.  Perkins Loan
+</span></p> 
+</td>
+<td  width=329  valign=top><p  class=rvps38><span class=rvts41>8. National SMART
+Grant</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=274  valign=top><p  class=rvps39><span  class=rvts41>4.  Parent  Plus
+(Graduate Student)</span></p> 
+</td>
+<td  width=329  valign=top><p  class=rvps40><span  class=rvts41>9.  Supplemental
+Education Opportunity Grant</span></p> 
+</td>
+</tr>
+<tr valign=top>
+<td  width=274 valign=top><p class=rvps41><span class=rvts41>5. Parent Plus Loan
+(Parent)</span></p> 
+</td>
+<td width=329 valign=top><p class=rvps42><span class=rvts41><br></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p  class=rvps44><span  class=rvts41>The  institution  and the student share the
+responsibility  for  returning  Title  IV  funds.  The  institution  returns the
+“unearned”  Title  IV  funds  that have been paid to the school to cover the
+student</span><span  class=rvts42>’</span><span  class=rvts41>s  institutional
+charges  received  from  Title  IV  grant  and/or  loan programs. The student is
+responsible  to repay any unpaid institutional charges resulting from the Return
+of Title IV Funds Calculation.</span></p> 
+<p  class=rvps45><span class=rvts41>The school must return Title IV funds due to
+the  Department  of  Education  no  later than 30 days after the date the school
+determines  the student withdrew. Due to the time necessary to research the last
+date  of  enrollment  for students who unofficially withdraw from the university
+(must  investigate  by  contacting all professors), notification of the unearned
+portion  may  be  notified to the student well after the violation (unofficially
+withdrawn semester). </span></p> 
+<p  class=rvps46><span  class=rvts41>If  the  student  owes  funds  back  to the
+Department  of  Education, the university will advise the student within 30 days
+of  determining that the student withdrew: The student has 45 days from the date
+of  notification  from  the university to take action on the overpayment. If the
+student</span><span   class=rvts42>’</span><span   class=rvts41>s  portion  of
+unearned  Title  IV  funds  includes  a federal grant, the student has to pay no
+more  than  50%  of  the  initial Pell award that the student is responsible for
+returning.</span></p> 
+<p class=rvps47><span class=rvts41><br></span></p>
+<p class=rvps48><span class=rvts41><br></span></p>
+<p class=rvps49><span class=rvts41><br></span></p>
+<p   class=rvps50><span   class=rvts41>PLEASE   NOTE:  Students  who  completely
+withdraw  from  the  University  will  be  subject to Financial Aid Satisfactory
+Academic  Progress  (SAP) Guidelines. Please visit the SAP guidelines that refer
+to      Minimum     Percentage     of     Credit     Hours     Completion     at
+www.asurams.edu.</span></p> 
+<p class=rvps51><span class=rvts26><br></span></p>
+</body></html>

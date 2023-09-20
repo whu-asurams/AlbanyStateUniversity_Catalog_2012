@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>speechTheatre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 16pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 13pt;
+ font-family: 'cambria';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 9pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+ color: #000000;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 4px 0px 6px;
+}
+.rvps3
+{
+ text-align: justify;
+ margin: 0px 4px 13px 6px;
+}
+.rvps4
+{
+ text-align: justify;
+ margin: 0px 4px 13px 6px;
+}
+.rvps5
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps6
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps7
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps8
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps9
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps10
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps11
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps12
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps13
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps14
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps15
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps16
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps17
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps18
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps19
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps20
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps21
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps22
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps23
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps24
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps25
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps26
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps27
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps28
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps29
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps30
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps31
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps32
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps33
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps34
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps35
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps36
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps37
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps38
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps39
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps40
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps41
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps42
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps43
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps44
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps45
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps46
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps47
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps48
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps49
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps50
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps51
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps52
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps53
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps54
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps55
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps56
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps57
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps58
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps59
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps60
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps61
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps62
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps63
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps64
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps65
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps66
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps67
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps68
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps69
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps70
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps71
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps72
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps73
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps74
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps75
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps76
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps77
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps78
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps79
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps80
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps81
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps82
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps83
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps84
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps85
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps86
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps87
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps88
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps89
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps90
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps91
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps92
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps93
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps94
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps95
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps96
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps97
+{
+ text-align: justify;
+ margin: 0px 4px 0px 6px;
+}
+.rvps98
+{
+}
+.rvps99
+{
+ text-align: justify;
+ margin: 0px 4px 13px 6px;
+}
+.rvps100
+{
+ text-indent: 48px;
+ margin: 0px 0px 13px 0px;
+}
+--></style>
+</head>
+<body>
+<h2 class=rvps2><a name="_Toc303109279"></a>
+<span   class=rvts0><span   class=rvts6>S</span></span><span   class=rvts0><span
+class=rvts7>PEECH        &amp;       </span></span><span       class=rvts0><span
+class=rvts6>T</span></span><span class=rvts0><span
+class=rvts7>HEATRE</span></span></h2> 
+<p class=rvps3><span class=rvts8><br></span></p>
+<p class=rvps4><span class=rvts8><br></span></p>
+<div   class=rvps98><table   width=721   border=0   cellpadding=4  cellspacing=0
+style="border-width: 0px;"> 
+<tr valign=top>
+<td  width=347  valign=top><p  class=rvps5><span  class=rvts8>COMM  1100&nbsp; -
+Fundamentals  of  Public  Speaking3.00 Credits </span><span class=rvts9>Analysis
+of  the  role  of  communication in society with an emphasis on speaker-listener
+responsibilities.&nbsp;&nbsp;   Class&nbsp;  performance&nbsp;  directed  toward
+proficiency in oral communication. Required of all students.</span></p> 
+<p class=rvps6><span class=rvts9><br></span></p>
+<p   class=rvps7><span   class=rvts8>COMM   2020&nbsp;   -   Voice  and  Diction
+..........................3.00   Credits   </span><span   class=rvts9>Study  and
+exercises  in  the  physiological  aspects&nbsp;  of&nbsp;  vocal&nbsp; delivery
+to&nbsp;  develop&nbsp; clear&nbsp; articulation&nbsp; and&nbsp; effective&nbsp;
+speech&nbsp;    production.    Designed&nbsp;   to   help&nbsp;   students&nbsp;
+recognize,&nbsp;  evaluate&nbsp;  and&nbsp;  compensate  for&nbsp;  common&nbsp;
+vocal deficiencies.</span></p> 
+<p class=rvps8><span class=rvts10>Prerequisite: COMM 1100 US C)</span></p>
+<p class=rvps9><span class=rvts9><br></span></p>
+<p   class=rvps10><span   class=rvts8>COMM   2030&nbsp;  -  Oral  Interpretation
+.......................3.00  Credits </span><span class=rvts9>Study and practice
+in   the  selection,  evaluation,  analysis,  preparation,  and  effective  oral
+presentation  of&nbsp;  literary&nbsp;  works;&nbsp;  prose,  poetry  and drama.
+Writing    and   adapting   material   for   oral   presentation.   </span><span
+class=rvts10>Prerequisite: COMM 1100 US</span></p> 
+<p class=rvps11><span class=rvts9><br></span></p>
+<p    class=rvps12><span   class=rvts8>COMM   2060&nbsp;   -   Advanced   Public
+Speaking...........3.00  Credits </span><span class=rvts9>Theory and practice of
+public  address:  selection  of  topic, research, outlining and organization and
+delivery.    Preparation    and    presentation   of   original   speeches   and
+constructive&nbsp;    criticism&nbsp;    of&nbsp;    performance.   </span><span
+class=rvts10>Prerequisite: COMM 1100 or consent of instructor.</span></p> 
+<p class=rvps13><span class=rvts9><br></span></p>
+<p    class=rvps14><span    class=rvts8>COMM    2150&nbsp;    -    Studies    in
+Rhetoric........................3.00             Credits            </span><span
+class=rvts9>Historical  study  of  rhetoric  and rhetoricians from the classical
+period to the present.</span></p> 
+<p class=rvps15><span class=rvts10>Prerequisite: COMM 1100 US</span></p>
+<p class=rvps16><span class=rvts9><br></span></p>
+<p    class=rvps17><span    class=rvts8>COMM    2200&nbsp;   -   Principles   of
+Discuss/Group.........3.00  Credits </span><span class=rvts9>Study of methods of
+problem-solving  and decision-making through group discussion. An examination of
+the   psycho-   logical   and   social  forces  operating  during  group  inter-
+section.</span></p> 
+<p class=rvps18><span class=rvts10>Prerequisite:&nbsp; COMM 1100 US</span></p>
+<p class=rvps19><span class=rvts9><br></span></p>
+<p   class=rvps20><span   class=rvts8>COMM   2400&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or  participation  in  organized  speech  activities  of  the  department.&nbsp;
+Prerequisite:        Permission        of        instructor.        </span><span
+class=rvts10>Prerequisite:&nbsp; COMM 1100 US</span></p> 
+<p class=rvps21><span class=rvts9><br></span></p>
+<p   class=rvps22><span   class=rvts8>COMM   2410&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps23><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps24><span class=rvts9><br></span></p>
+<p   class=rvps25><span   class=rvts8>COMM   2420&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps26><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps27><span class=rvts9><br></span></p>
+<p   class=rvps28><span   class=rvts8>COMM   2430&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps29><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps30><span class=rvts9><br></span></p>
+<p   class=rvps31><span   class=rvts8>COMM   2440&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps32><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps33><span class=rvts9><br></span></p>
+<p   class=rvps34><span   class=rvts8>COMM   2450&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps35><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps36><span class=rvts9><br></span></p>
+<p   class=rvps37><span   class=rvts8>COMM   2460&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+and   participation   in   organized   speech&nbsp;   activities   of&nbsp;  the
+department.</span></p> 
+<p      class=rvps38><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps39><span class=rvts9><br></span></p>
+<p   class=rvps40><span   class=rvts8>COMM   2470&nbsp;   -  Speech  Performance
+.....................1.00  Credits  </span><span class=rvts9>Individual projects
+or participation in organized speech activities of the department.</span></p> 
+<p      class=rvps41><span      class=rvts10>Prerequisite:     Permission     of
+instructor.</span></p> 
+<p class=rvps42><span class=rvts9><br></span></p>
+<p  class=rvps43><span  class=rvts8>COMM  3070&nbsp; - Introduction to Audiology
+............3.00  Credits  </span><span  class=rvts9>Study  and  analysis of the
+anatomy,  physiology  and  the  nature  of  sound  in relation to the ear.&nbsp;
+Identification    of    hearing    losses   and&nbsp;   mastering   of   hearing
+diagnostics.</span></p> 
+<p class=rvps44><span class=rvts9><br></span></p>
+<p  class=rvps45><span  class=rvts8>COMM  3080&nbsp;  - Anatomy &amp; Physics of
+Speech </span></p> 
+<p class=rvps46><span
+class=rvts8>Mech……………………………………………...…3.00
+Credits </span></p> 
+<p   class=rvps47><span   class=rvts9>Structures,   musculature   function,  and
+neurology of the mechanism used for speaking.</span></p> 
+<p class=rvps48><span class=rvts9><br></span></p>
+<p      class=rvps49><span      class=rvts8>COMM      3100&nbsp;     -     Black
+Rhetoric...............................3.00         Credits         </span><span
+class=rvts9>History  and interpretation of significant theories and practices of
+Black Oratory from 1688 to the present.</span></p> 
+<p class=rvps50><span class=rvts10>Prerequisite: COMM 1100</span></p>
+<p class=rvps51><span class=rvts9><br></span></p>
+<p  class=rvps52><span  class=rvts8>COMM  3150&nbsp; - Introduction to Forensics
+.............3.00  Credits  </span><span  class=rvts9>Principles and practice in
+both  group  and  individual  speaking  events  for  participation  in  forensic
+tournaments,  and festivals.&nbsp; Organization of forensic programs, management
+of  inter-school  contests  and  tournaments,  and  principles of coaching&nbsp;
+and&nbsp; judging.</span></p> 
+<p  class=rvps53><span class=rvts10>Prerequisite:&nbsp; COMM&nbsp; 1100&nbsp; or
+consent of instructor.</span></p> 
+</td>
+<td  width=346  valign=top><p  class=rvps54><span  class=rvts8>COMM 3200&nbsp; -
+Phonetics........................................3.00    Credits    </span><span
+class=rvts9>Speech&nbsp;  sounds&nbsp; considered&nbsp; from&nbsp; a&nbsp;&nbsp;
+sociological,&nbsp;&nbsp;  physiological and acoustical viewpoint.&nbsp; Mastery
+of  the&nbsp;  international&nbsp;  phonetic  alphabet  and  practice in English
+phonetic transcription.</span></p> 
+<p class=rvps55><span class=rvts10>Prerequisite: COMM 1100</span></p>
+<p class=rvps56><span class=rvts9><br></span></p>
+<p class=rvps57><span class=rvts8>COMM 3330&nbsp; - Speech for the</span></p>
+<p            class=rvps58><span            class=rvts8>Secondary           Tchr
+........................................................3.00 Credits
+</span><span      class=rvts9>Study      and      exercises     in     effective
+communication&nbsp;&nbsp;   principles&nbsp;&nbsp;   and   techniques   in   the
+secondary  school  classroom  and  instruction&nbsp;  in  speech&nbsp; and&nbsp;
+voice development.</span></p> 
+<p class=rvps59><span class=rvts10>Prerequisite: COMM 1100.</span></p>
+<p class=rvps60><span class=rvts9><br></span></p>
+<p    class=rvps61><span    class=rvts8>COMM    3340&nbsp;    -    Speech    for
+Elementary/Middle Grade</span></p> 
+<p class=rvps62><span
+class=rvts8>Teachers…………………………………………….….3
+Credits</span></p> 
+<p   class=rvps63><span   class=rvts9>Instruction  and  exercises  in  effective
+classroom  communication  and  in the speech and voice development of elementary
+and middle grade students and teachers.</span></p> 
+<p class=rvps64><span class=rvts10>Prerequisite: COMM 1100.</span></p>
+<p class=rvps65><span class=rvts9><br></span></p>
+<p   class=rvps66><span   class=rvts8>COMM  3760&nbsp;  -  Speech  in  Prophetic
+Religion .......3.00 Credits</span></p> 
+<p   class=rvps67><span   class=rvts9>An   examination   and   consideration  of
+oral&nbsp;  interpretation&nbsp;  in&nbsp;  the  public  reading  and address of
+scriptural   literature&nbsp;&nbsp;   with&nbsp;&nbsp;   special   emphasis   on
+religious  rhetoric  and  historic&nbsp;  role&nbsp;  of&nbsp; the&nbsp; prophet
+in&nbsp;&nbsp;  the  socio-religious  situation.&nbsp;  Attention  paid  to  the
+design and preparation of homilies.</span></p> 
+<p class=rvps68><span class=rvts9><br></span></p>
+<p  class=rvps69><span class=rvts8>COMM 4000&nbsp; - Intercultural Communication
+.....3.00 Credits</span></p> 
+<p  class=rvps70><span  class=rvts9>A  study&nbsp;  of&nbsp; communication&nbsp;
+barriers&nbsp;   which&nbsp;   hinder&nbsp;  understanding  among  persons  from
+different  cultures,  and  a  review  of  methods  used&nbsp; in resolving these
+communication problems.</span></p> 
+<p class=rvps71><span class=rvts10>Prerequisite: COMM 1100.</span></p>
+<p class=rvps72><span class=rvts9><br></span></p>
+<p    class=rvps73><span    class=rvts8>COMM    4010&nbsp;    -   Organizational
+Communication   ..3.00   Credits   </span><span   class=rvts9>Analysis  of&nbsp;
+human&nbsp;  communication&nbsp;  patterns&nbsp; in&nbsp; organizations. Special
+emphasis&nbsp;              on&nbsp;             communication&nbsp;&nbsp;&nbsp;
+barriers,&nbsp;&nbsp;&nbsp;  policies&nbsp;&nbsp;&nbsp;  and  practices&nbsp; in
+administration.</span></p> 
+<p class=rvps74><span class=rvts10>Prerequisite: COMM 1100.</span></p>
+<p class=rvps75><span class=rvts9><br></span></p>
+<p  class=rvps76><span  class=rvts8>COMM  4070&nbsp; - Intro to Speech Disorders
+............3.00  Credits  </span><span class=rvts9>Survey of speech defects and
+disorders  found&nbsp;  in&nbsp;  childhood&nbsp;  and  adolescence.&nbsp; Basic
+symptoms,  causes,&nbsp; methods&nbsp; of&nbsp; referrals&nbsp; and evaluations,
+and basic therapy treatments.</span></p> 
+<p class=rvps77><span class=rvts10>Prerequisite: COMM 2020.</span></p>
+<p class=rvps78><span class=rvts9><br></span></p>
+<p      class=rvps79><span     class=rvts8>COMM     4080&nbsp;     -     Organic
+Disorders.........................3.00            Credits           </span><span
+class=rvts9>Introduction   to   the   study   of   voice,&nbsp;   cerebral&nbsp;
+palsy,&nbsp;      cleft&nbsp;      palate&nbsp;     and     aphasia;&nbsp;&nbsp;
+causation,&nbsp;&nbsp;           diagnosis,&nbsp;&nbsp;          and&nbsp;&nbsp;
+treatment&nbsp;&nbsp;        of&nbsp;&nbsp;        disorders.       </span><span
+class=rvts10>Prerequisite: COMM 3080.</span></p> 
+<p class=rvps80><span class=rvts9><br></span></p>
+<p   class=rvps81><span   class=rvts8>COMM   4090&nbsp;   -   Acquisition  &amp;
+Development</span></p> 
+<p             class=rvps82><span             class=rvts8>of            Language
+..............................................................3.00 Credits
+</span><span   class=rvts9>Study  of  normal  speech  and  language  acquisition
+including   stages   of   development   and   influences   on   the  development
+process.&nbsp;  Survey  of&nbsp;&nbsp;  speech  and  language patterns resulting
+from&nbsp;&nbsp;   environmental  deprivation,&nbsp;&nbsp;  mental  retardation,
+physical anomalies, and mental illnesses.</span></p> 
+<p class=rvps83><span class=rvts9><br></span></p>
+<p  class=rvps84><span  class=rvts8>COMM  4100&nbsp;  -  Fund  of  Parliamentary
+Procedure2.00    Credits    </span><span    class=rvts9>Study&nbsp;    and&nbsp;
+intensive&nbsp;      drill&nbsp;      in&nbsp;      the&nbsp;     standard&nbsp;
+parliamentary&nbsp;&nbsp;&nbsp;  rules governing the proceedings of deliberative
+assemblies.  Discussion  of  the&nbsp; practices and the basic philosophy under-
+lying parliamentary procedure.</span></p> 
+<p class=rvps85><span class=rvts9><br></span></p>
+<p    class=rvps86><span    class=rvts8>COMM    4110&nbsp;    -    Communication
+Research</span></p> 
+<p                        class=rvps87><span                        class=rvts8>
+Methods....................................................................3.00
+Credits   </span><span   class=rvts9>The  study  of  research  methods  used  to
+investigate  communication. This&nbsp;&nbsp; course&nbsp; will&nbsp; focus&nbsp;
+on&nbsp;      the&nbsp;      implementation,&nbsp;      analysis,&nbsp;      and
+interpretation</span><span  class=rvts9> &nbsp; &nbsp; &nbsp; &nbsp;</span><span
+class=rvts9>of&nbsp;  measures&nbsp;  used&nbsp;  to&nbsp; examine communication
+phenomena&nbsp;   within&nbsp;  organizations  including  communication  audits,
+network analysis, and&nbsp; content&nbsp; analysis.</span></p> 
+<p class=rvps88><span class=rvts10>Prerequisite: COMM 1100.</span></p>
+<p class=rvps89><span class=rvts9><br></span></p>
+<p  class=rvps90><span  class=rvts8>COMM  4120&nbsp;  -  Articulation  Disorders
+..................3.00   Credits   </span><span   class=rvts9>Emphasis  on&nbsp;
+diagnostic&nbsp;      and&nbsp;      treatment&nbsp;     techniques.&nbsp;&nbsp;
+Mastery&nbsp;  of  international&nbsp;  phonetic&nbsp;  alphabet&nbsp; and&nbsp;
+basic&nbsp;     plans&nbsp;     or&nbsp;     methods&nbsp;     of    therapeutic
+programs.</span></p> 
+<p  class=rvps91><span  class=rvts10>Prerequisite:  COMM  4070  or permission of
+instructor.</span></p> 
+<p class=rvps92><span class=rvts9><br></span></p>
+<p   class=rvps93><span   class=rvts8>COMM  4130&nbsp;  -  Stuttering  Disorders
+.....................3.00  Credits </span><span class=rvts9>Emphasis on etiology
+and  treatment  of  stuttering,  based  on  organic  or  non-organic</span><span
+class=rvts9>        &nbsp;        &nbsp;        &nbsp;        &nbsp;</span><span
+class=rvts9>factors.</span><span     class=rvts9>     &nbsp;    &nbsp;    &nbsp;
+&nbsp;</span><span         class=rvts9>Development         of        therapeutic
+approaches.</span></p> 
+<p class=rvps94><span class=rvts10>Prerequisite: COMM 4070.</span></p>
+<p class=rvps95><span class=rvts9><br></span></p>
+<p   class=rvps96><span   class=rvts8>COMM   4200&nbsp;   -   Argumentation  and
+Debate..........3.00  Credits </span><span class=rvts9>Study and practice in the
+principles  of  argumentation  and debate, including the location and evaluation
+of evidence, development of proofs, and preparation of briefs.</span></p> 
+<p class=rvps97><span class=rvts10>Prerequisite: COMM 1001.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps99><span class=rvts8><br></span></p>
+<p class=rvps100><span class=rvts11><br></span></p>
+</body></html>
